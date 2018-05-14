@@ -18,9 +18,11 @@ module SenseC
 }
 implementation
 {
-  uint16_t prev_data;
-  int16_t sub;
+  uint16_t prev_data = 0;
+  int16_t sub = 0;
   uint32_t tmp;
+  int8_t tempArray[1];
+  
   TreeNode *root = NULL;
   TreeNode *root2 = NULL;
 
@@ -52,10 +54,10 @@ implementation
 
   event void Timer.fired()
   {
-    int8_t data[5] = {1, 3, 2, 5, 4};
-    uint8_t i;
-    uint8_t *code;
-    int8_t *dataArray;
+    // int8_t data[5] = {1, 3, 2, 5, 4};
+    // uint8_t i;
+    // uint8_t *code;
+    // int8_t *dataArray;
 
     if (root == NULL){
       root = call HuffmanTree.createEmptyTree();
@@ -64,26 +66,30 @@ implementation
       root2 = call HuffmanTree.createEmptyTree();
     }
 
-    code = call HuffmanTree.encode(data, 5, root);
+    //code = call HuffmanTree.encode(data, 5, root);
 
-    printf("code %ld\n ", strlen(code));
-    toBinary(code);
+    // printf("code %ld\n ", strlen(code));
+    // toBinary(code);
 
-    dataArray = call HuffmanTree.decode(code, root2);
+    // dataArray = call HuffmanTree.decode(code, root2);
 
 
-    for(i = 0; i < 5; i++){
-      printf("%d ", dataArray[i]);
-    }
-    printf("\n");
-    printfflush();
+    // for(i = 0; i < 5; i++){
+    //   printf("%d ", dataArray[i]);
+    // }
+    // printf("\n");
+    // printfflush();
 
-    free(code);
-    free(dataArray);
+    // free(code);
+    // free(dataArray);
+
+    call Read.read();
   }
 
   event void Read.readDone(error_t result, uint16_t data)
   {
+    uint8_t *code, i;
+    int8_t *dataArray;
     sub = data - prev_data;
     if(sub < 0){
       tmp = -sub / 10;
@@ -102,6 +108,27 @@ implementation
     printf("data: "); printfFloat(-39.6 + 0.01*data);
     printf("prev: "); printfFloat(-39.6 + 0.01*prev_data);
     printf("tmp: %ld\n", tmp);
+
+    tempArray[0] = tmp;
+
+    code = call HuffmanTree.encode(tempArray, 1, root);
+
+    printf("code %ld\n ", strlen(code));
+    toBinary(code);
+
+    dataArray = call HuffmanTree.decode(code, root2);
+
+
+    for(i = 0; i < 1; i++){
+      printf("%d ", dataArray[0]);
+    }
+    printf("\n");
+    printfflush();
+
+    free(code);
+    free(dataArray);
+
+
 
     printfflush();
 
