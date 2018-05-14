@@ -24,7 +24,7 @@ implementation
   TreeNode *root = NULL;
   TreeNode *root2 = NULL;
 
-  size_t strlen(const char *s) {
+  size_t strlen1(const char *s) {
     size_t i;
     printf("%s\n", s);
     for (i = 0; s[i] != '\0'; i++) ;
@@ -52,10 +52,10 @@ implementation
 
   event void Timer.fired()
   {
-    int8_t data[5] = {1, 2, 2, 1, 1};
+    int8_t data[5] = {1, 3, 2, 5, 4};
     uint8_t i;
     uint8_t *code;
-    uint8_t *dataArray;
+    int8_t *dataArray;
 
     if (root == NULL){
       root = call HuffmanTree.createEmptyTree();
@@ -65,10 +65,12 @@ implementation
     }
 
     code = call HuffmanTree.encode(data, 5, root);
+
+    printf("code %ld\n ", strlen(code));
+    toBinary(code);
+
     dataArray = call HuffmanTree.decode(code, root2);
 
-    printf("code %2x ", code[0]);
-    toBinary(code);
 
     for(i = 0; i < 5; i++){
       printf("%d ", dataArray[i]);

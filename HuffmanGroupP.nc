@@ -89,6 +89,7 @@ implementation {
         return ++length*2;
       }
       size >>= 1;
+      length++;
     }
 
     return 0;
