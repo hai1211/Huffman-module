@@ -201,15 +201,9 @@ typedef int32_t ufs_daddr_t;
 typedef int32_t ufs_time_t;
 typedef u_int32_t uid_t;
 # 44 "/usr/lib/gcc/msp430/4.6.3/../../../../msp430/include/string.h" 3
-extern void *memset(void *arg_0x7f0344557020, int arg_0x7f03445572a0, size_t arg_0x7f0344557560);
-
-
-
-
-
-extern size_t strlen(const char *arg_0x7f0344551c40);
+extern void *memset(void *arg_0x7f1a44eaa020, int arg_0x7f1a44eaa2a0, size_t arg_0x7f1a44eaa560);
 #line 65
-extern void *memset(void *arg_0x7f034453f060, int arg_0x7f034453f2e0, size_t arg_0x7f034453f5a0);
+extern void *memset(void *arg_0x7f1a44e92060, int arg_0x7f1a44e922e0, size_t arg_0x7f1a44e925a0);
 # 62 "/usr/lib/gcc/msp430/4.6.3/../../../../msp430/include/stdlib.h" 3
 #line 59
 typedef struct __nesc_unnamed4242 {
@@ -367,7 +361,7 @@ struct _reent {
 
   int __sdidinit;
 
-  void (*__cleanup)(struct _reent *arg_0x7f0344502170);
+  void (*__cleanup)(struct _reent *arg_0x7f1a44e55170);
 
 
   struct _Bigint *_result;
@@ -407,7 +401,7 @@ struct _reent {
   struct _atexit _atexit0;
 
 
-  void (**_sig_func)(int arg_0x7f03444fd480);
+  void (**_sig_func)(int arg_0x7f1a44e50480);
 
 
 
@@ -1718,7 +1712,7 @@ static void /*Msp430TimerC.Msp430TimerA*/Msp430TimerP__0__VectorTimerX1__fired(v
 #line 39
 static void /*Msp430TimerC.Msp430TimerA*/Msp430TimerP__0__Event__default__fired(
 # 51 "/opt/tinyos-main/tos/chips/msp430/timer/Msp430TimerP.nc"
-uint8_t arg_0x7f0343e8a310);
+uint8_t arg_0x7f1a447dd310);
 # 39 "/opt/tinyos-main/tos/chips/msp430/timer/Msp430TimerEvent.nc"
 static void /*Msp430TimerC.Msp430TimerB*/Msp430TimerP__1__VectorTimerX0__fired(void );
 #line 39
@@ -1728,7 +1722,7 @@ static void /*Msp430TimerC.Msp430TimerB*/Msp430TimerP__1__VectorTimerX1__fired(v
 #line 39
 static void /*Msp430TimerC.Msp430TimerB*/Msp430TimerP__1__Event__default__fired(
 # 51 "/opt/tinyos-main/tos/chips/msp430/timer/Msp430TimerP.nc"
-uint8_t arg_0x7f0343e8a310);
+uint8_t arg_0x7f1a447dd310);
 # 45 "/opt/tinyos-main/tos/chips/msp430/timer/Msp430Timer.nc"
 static uint16_t /*Msp430TimerC.Msp430TimerB*/Msp430TimerP__1__Timer__get(void );
 static bool /*Msp430TimerC.Msp430TimerB*/Msp430TimerP__1__Timer__isOverflowPending(void );
@@ -1876,11 +1870,11 @@ static void McuSleepC__McuSleep__sleep(void );
 # 67 "/opt/tinyos-main/tos/interfaces/TaskBasic.nc"
 static error_t SchedulerBasicP__TaskBasic__postTask(
 # 56 "/opt/tinyos-main/tos/system/SchedulerBasicP.nc"
-uint8_t arg_0x7f0343fd39c0);
+uint8_t arg_0x7f1a449269c0);
 # 75 "/opt/tinyos-main/tos/interfaces/TaskBasic.nc"
 static void SchedulerBasicP__TaskBasic__default__runTask(
 # 56 "/opt/tinyos-main/tos/system/SchedulerBasicP.nc"
-uint8_t arg_0x7f0343fd39c0);
+uint8_t arg_0x7f1a449269c0);
 # 57 "/opt/tinyos-main/tos/interfaces/Scheduler.nc"
 static void SchedulerBasicP__Scheduler__init(void );
 #line 72
@@ -2053,11 +2047,11 @@ static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__TimerFrom__f
 #line 83
 static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__Timer__default__fired(
 # 48 "/opt/tinyos-main/tos/lib/timer/VirtualizeTimerC.nc"
-uint8_t arg_0x7f034396d020);
+uint8_t arg_0x7f1a442c0020);
 # 64 "/opt/tinyos-main/tos/lib/timer/Timer.nc"
 static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__Timer__startPeriodic(
 # 48 "/opt/tinyos-main/tos/lib/timer/VirtualizeTimerC.nc"
-uint8_t arg_0x7f034396d020, 
+uint8_t arg_0x7f1a442c0020, 
 # 64 "/opt/tinyos-main/tos/lib/timer/Timer.nc"
 uint32_t dt);
 
@@ -2070,7 +2064,7 @@ uint32_t dt);
 
 static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__Timer__startOneShot(
 # 48 "/opt/tinyos-main/tos/lib/timer/VirtualizeTimerC.nc"
-uint8_t arg_0x7f034396d020, 
+uint8_t arg_0x7f1a442c0020, 
 # 73 "/opt/tinyos-main/tos/lib/timer/Timer.nc"
 uint32_t dt);
 
@@ -2079,7 +2073,7 @@ uint32_t dt);
 
 static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__Timer__stop(
 # 48 "/opt/tinyos-main/tos/lib/timer/VirtualizeTimerC.nc"
-uint8_t arg_0x7f034396d020);
+uint8_t arg_0x7f1a442c0020);
 # 82 "/opt/tinyos-main/tos/lib/timer/Counter.nc"
 static void /*HilTimerMilliC.CounterToLocalTimeC*/CounterToLocalTimeC__0__Counter__overflow(void );
 # 84 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
@@ -2119,39 +2113,39 @@ static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__
 # 84 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
 static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__measureHumidityDone(
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11LogicP.nc"
-uint8_t arg_0x7f03438a8a60, 
+uint8_t arg_0x7f1a441fba60, 
 # 84 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
 error_t result, uint16_t val);
 #line 76
 static error_t /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__measureHumidity(
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11LogicP.nc"
-uint8_t arg_0x7f03438a8a60);
+uint8_t arg_0x7f1a441fba60);
 # 61 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
 static error_t /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__measureTemperature(
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11LogicP.nc"
-uint8_t arg_0x7f03438a8a60);
+uint8_t arg_0x7f1a441fba60);
 # 116 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
 static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__writeStatusRegDone(
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11LogicP.nc"
-uint8_t arg_0x7f03438a8a60, 
+uint8_t arg_0x7f1a441fba60, 
 # 116 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
 error_t result);
 #line 100
 static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__readStatusRegDone(
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11LogicP.nc"
-uint8_t arg_0x7f03438a8a60, 
+uint8_t arg_0x7f1a441fba60, 
 # 100 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
 error_t result, uint8_t val);
 #line 54
 static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__resetDone(
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11LogicP.nc"
-uint8_t arg_0x7f03438a8a60, 
+uint8_t arg_0x7f1a441fba60, 
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
 error_t result);
 #line 69
 static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__measureTemperatureDone(
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11LogicP.nc"
-uint8_t arg_0x7f03438a8a60, 
+uint8_t arg_0x7f1a441fba60, 
 # 69 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
 error_t result, uint16_t val);
 # 83 "/opt/tinyos-main/tos/lib/timer/Timer.nc"
@@ -2298,15 +2292,15 @@ static resource_client_id_t /*HplSensirionSht11C.Arbiter.Queue*/FcfsResourceQueu
 # 53 "/opt/tinyos-main/tos/interfaces/ResourceRequested.nc"
 static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceRequested__default__requested(
 # 55 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436aacf0);
+uint8_t arg_0x7f1a43ffdcf0);
 # 65 "/opt/tinyos-main/tos/interfaces/ResourceConfigure.nc"
 static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceConfigure__default__unconfigure(
 # 60 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436a6240);
+uint8_t arg_0x7f1a43ff9240);
 # 59 "/opt/tinyos-main/tos/interfaces/ResourceConfigure.nc"
 static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceConfigure__default__configure(
 # 60 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436a6240);
+uint8_t arg_0x7f1a43ff9240);
 # 56 "/opt/tinyos-main/tos/interfaces/ResourceDefaultOwner.nc"
 static error_t /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceDefaultOwner__release(void );
 
@@ -2321,15 +2315,15 @@ static bool /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceDefaultOw
 # 120 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static error_t /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__Resource__release(
 # 54 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436aba50);
+uint8_t arg_0x7f1a43ffea50);
 # 88 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static error_t /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__Resource__request(
 # 54 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436aba50);
+uint8_t arg_0x7f1a43ffea50);
 # 102 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__Resource__default__granted(
 # 54 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436aba50);
+uint8_t arg_0x7f1a43ffea50);
 # 75 "/opt/tinyos-main/tos/interfaces/TaskBasic.nc"
 static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__grantedTask__runTask(void );
 # 113 "/opt/tinyos-main/tos/interfaces/SplitControl.nc"
@@ -2382,7 +2376,7 @@ error_t error);
 # 110 "/opt/tinyos-main/tos/interfaces/AMSend.nc"
 static void /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__AMSend__sendDone(
 # 48 "/opt/tinyos-main/tos/system/AMQueueImplP.nc"
-am_id_t arg_0x7f03435adce0, 
+am_id_t arg_0x7f1a43f00ce0, 
 # 103 "/opt/tinyos-main/tos/interfaces/AMSend.nc"
 message_t * msg, 
 
@@ -2395,7 +2389,7 @@ error_t error);
 # 75 "/opt/tinyos-main/tos/interfaces/Send.nc"
 static error_t /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__Send__send(
 # 46 "/opt/tinyos-main/tos/system/AMQueueImplP.nc"
-uint8_t arg_0x7f03435aea60, 
+uint8_t arg_0x7f1a43f01a60, 
 # 67 "/opt/tinyos-main/tos/interfaces/Send.nc"
 message_t * msg, 
 
@@ -2409,7 +2403,7 @@ uint8_t len);
 #line 100
 static void /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__Send__default__sendDone(
 # 46 "/opt/tinyos-main/tos/system/AMQueueImplP.nc"
-uint8_t arg_0x7f03435aea60, 
+uint8_t arg_0x7f1a43f01a60, 
 # 96 "/opt/tinyos-main/tos/interfaces/Send.nc"
 message_t * msg, 
 
@@ -2448,7 +2442,7 @@ uint8_t len);
 # 80 "/opt/tinyos-main/tos/interfaces/AMSend.nc"
 static error_t /*SerialActiveMessageC.AM*/SerialActiveMessageP__0__AMSend__send(
 # 47 "/opt/tinyos-main/tos/lib/serial/SerialActiveMessageP.nc"
-am_id_t arg_0x7f0343550320, 
+am_id_t arg_0x7f1a43ea3320, 
 # 80 "/opt/tinyos-main/tos/interfaces/AMSend.nc"
 am_addr_t addr, 
 #line 71
@@ -2499,7 +2493,7 @@ message_t *
 
 /*SerialActiveMessageC.AM*/SerialActiveMessageP__0__Receive__default__receive(
 # 48 "/opt/tinyos-main/tos/lib/serial/SerialActiveMessageP.nc"
-am_id_t arg_0x7f034354f650, 
+am_id_t arg_0x7f1a43ea2650, 
 # 71 "/opt/tinyos-main/tos/interfaces/Receive.nc"
 message_t * msg, 
 void * payload, 
@@ -2568,7 +2562,7 @@ static void /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__receive
 # 75 "/opt/tinyos-main/tos/interfaces/Send.nc"
 static error_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__Send__send(
 # 51 "/opt/tinyos-main/tos/lib/serial/SerialDispatcherP.nc"
-uart_id_t arg_0x7f0343416110, 
+uart_id_t arg_0x7f1a43d69110, 
 # 67 "/opt/tinyos-main/tos/interfaces/Send.nc"
 message_t * msg, 
 
@@ -2582,7 +2576,7 @@ uint8_t len);
 #line 100
 static void /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__Send__default__sendDone(
 # 51 "/opt/tinyos-main/tos/lib/serial/SerialDispatcherP.nc"
-uart_id_t arg_0x7f0343416110, 
+uart_id_t arg_0x7f1a43d69110, 
 # 96 "/opt/tinyos-main/tos/interfaces/Send.nc"
 message_t * msg, 
 
@@ -2600,7 +2594,7 @@ message_t *
 
 /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__Receive__default__receive(
 # 50 "/opt/tinyos-main/tos/lib/serial/SerialDispatcherP.nc"
-uart_id_t arg_0x7f0343417570, 
+uart_id_t arg_0x7f1a43d6a570, 
 # 71 "/opt/tinyos-main/tos/interfaces/Receive.nc"
 message_t * msg, 
 void * payload, 
@@ -2613,17 +2607,17 @@ uint8_t len);
 # 31 "/opt/tinyos-main/tos/lib/serial/SerialPacketInfo.nc"
 static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__default__upperLength(
 # 54 "/opt/tinyos-main/tos/lib/serial/SerialDispatcherP.nc"
-uart_id_t arg_0x7f03434154d0, 
+uart_id_t arg_0x7f1a43d684d0, 
 # 31 "/opt/tinyos-main/tos/lib/serial/SerialPacketInfo.nc"
 message_t *msg, uint8_t dataLinkLen);
 #line 15
 static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__default__offset(
 # 54 "/opt/tinyos-main/tos/lib/serial/SerialDispatcherP.nc"
-uart_id_t arg_0x7f03434154d0);
+uart_id_t arg_0x7f1a43d684d0);
 # 23 "/opt/tinyos-main/tos/lib/serial/SerialPacketInfo.nc"
 static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__default__dataLinkLength(
 # 54 "/opt/tinyos-main/tos/lib/serial/SerialDispatcherP.nc"
-uart_id_t arg_0x7f03434154d0, 
+uart_id_t arg_0x7f1a43d684d0, 
 # 23 "/opt/tinyos-main/tos/lib/serial/SerialPacketInfo.nc"
 message_t *msg, uint8_t upperLen);
 # 81 "/opt/tinyos-main/tos/lib/serial/SendBytePacket.nc"
@@ -2685,29 +2679,29 @@ static error_t HdlcTranslateC__SerialFrameComm__putData(uint8_t data);
 # 65 "/opt/tinyos-main/tos/interfaces/ResourceConfigure.nc"
 static void /*Msp430Uart1P.UartP*/Msp430UartP__0__ResourceConfigure__unconfigure(
 # 47 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343315020);
+uint8_t arg_0x7f1a43c68020);
 # 59 "/opt/tinyos-main/tos/interfaces/ResourceConfigure.nc"
 static void /*Msp430Uart1P.UartP*/Msp430UartP__0__ResourceConfigure__configure(
 # 47 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343315020);
+uint8_t arg_0x7f1a43c68020);
 # 59 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
 static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciInterrupts__rxDone(
 # 55 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f03432f4320, 
+uint8_t arg_0x7f1a43c47320, 
 # 59 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
 uint8_t data);
 #line 54
 static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciInterrupts__txDone(
 # 55 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f03432f4320);
+uint8_t arg_0x7f1a43c47320);
 # 44 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartConfigure.nc"
 static msp430_uart_union_config_t */*Msp430Uart1P.UartP*/Msp430UartP__0__Msp430UartConfigure__default__getConfig(
 # 53 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343310510);
+uint8_t arg_0x7f1a43c63510);
 # 48 "/opt/tinyos-main/tos/interfaces/UartStream.nc"
 static error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__send(
 # 48 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343315d30, 
+uint8_t arg_0x7f1a43c68d30, 
 # 44 "/opt/tinyos-main/tos/interfaces/UartStream.nc"
 uint8_t * buf, 
 
@@ -2717,13 +2711,13 @@ uint16_t len);
 #line 79
 static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__default__receivedByte(
 # 48 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343315d30, 
+uint8_t arg_0x7f1a43c68d30, 
 # 79 "/opt/tinyos-main/tos/interfaces/UartStream.nc"
 uint8_t byte);
 #line 99
 static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__default__receiveDone(
 # 48 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343315d30, 
+uint8_t arg_0x7f1a43c68d30, 
 # 95 "/opt/tinyos-main/tos/interfaces/UartStream.nc"
 uint8_t * buf, 
 
@@ -2733,7 +2727,7 @@ uint16_t len, error_t error);
 #line 57
 static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__default__sendDone(
 # 48 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343315d30, 
+uint8_t arg_0x7f1a43c68d30, 
 # 53 "/opt/tinyos-main/tos/interfaces/UartStream.nc"
 uint8_t * buf, 
 
@@ -2745,31 +2739,31 @@ static void /*Msp430Uart1P.UartP*/Msp430UartP__0__Counter__overflow(void );
 # 120 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__Resource__release(
 # 46 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f034331bcd0);
+uint8_t arg_0x7f1a43c6ecd0);
 # 97 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__Resource__immediateRequest(
 # 46 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f034331bcd0);
+uint8_t arg_0x7f1a43c6ecd0);
 # 102 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static void /*Msp430Uart1P.UartP*/Msp430UartP__0__Resource__default__granted(
 # 46 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f034331bcd0);
+uint8_t arg_0x7f1a43c6ecd0);
 # 120 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__default__release(
 # 52 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343311240);
+uint8_t arg_0x7f1a43c64240);
 # 97 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__default__immediateRequest(
 # 52 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343311240);
+uint8_t arg_0x7f1a43c64240);
 # 102 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__granted(
 # 52 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343311240);
+uint8_t arg_0x7f1a43c64240);
 # 128 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static bool /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__default__isOwner(
 # 52 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343311240);
+uint8_t arg_0x7f1a43c64240);
 # 58 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/HplMsp430UsciRawInterrupts.nc"
 static void HplMsp430UsciA1P__UsciRawInterrupts__rxDone(uint8_t data);
 #line 53
@@ -2811,13 +2805,13 @@ static void HplMsp430UsciAB1RawInterruptsP__UsciB__default__txDone(void );
 # 59 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
 static void /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interrupts__default__rxDone(
 # 41 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UsciShareP.nc"
-uint8_t arg_0x7f03431d75f0, 
+uint8_t arg_0x7f1a43b2a5f0, 
 # 59 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
 uint8_t data);
 #line 54
 static void /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interrupts__default__txDone(
 # 41 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UsciShareP.nc"
-uint8_t arg_0x7f03431d75f0);
+uint8_t arg_0x7f1a43b2a5f0);
 # 59 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
 static void /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__RawInterrupts__rxDone(uint8_t data);
 #line 54
@@ -2831,15 +2825,15 @@ static resource_client_id_t /*Msp430UsciShareA1P.ArbiterC.Queue*/FcfsResourceQue
 # 61 "/opt/tinyos-main/tos/interfaces/ResourceRequested.nc"
 static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceRequested__default__immediateRequested(
 # 55 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436aacf0);
+uint8_t arg_0x7f1a43ffdcf0);
 # 65 "/opt/tinyos-main/tos/interfaces/ResourceConfigure.nc"
 static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceConfigure__default__unconfigure(
 # 60 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436a6240);
+uint8_t arg_0x7f1a43ff9240);
 # 59 "/opt/tinyos-main/tos/interfaces/ResourceConfigure.nc"
 static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceConfigure__default__configure(
 # 60 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436a6240);
+uint8_t arg_0x7f1a43ff9240);
 # 56 "/opt/tinyos-main/tos/interfaces/ResourceDefaultOwner.nc"
 static error_t /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceDefaultOwner__release(void );
 #line 46
@@ -2849,19 +2843,19 @@ static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceDefaultO
 # 120 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static error_t /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__Resource__release(
 # 54 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436aba50);
+uint8_t arg_0x7f1a43ffea50);
 # 97 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static error_t /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__Resource__immediateRequest(
 # 54 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436aba50);
+uint8_t arg_0x7f1a43ffea50);
 # 102 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__Resource__default__granted(
 # 54 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436aba50);
+uint8_t arg_0x7f1a43ffea50);
 # 128 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static bool /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__Resource__isOwner(
 # 54 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436aba50);
+uint8_t arg_0x7f1a43ffea50);
 # 90 "/opt/tinyos-main/tos/interfaces/ArbiterInfo.nc"
 static bool /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ArbiterInfo__inUse(void );
 
@@ -3106,7 +3100,7 @@ static inline error_t Msp430ClockP__Init__init(void );
 # 39 "/opt/tinyos-main/tos/chips/msp430/timer/Msp430TimerEvent.nc"
 static void /*Msp430TimerC.Msp430TimerA*/Msp430TimerP__0__Event__fired(
 # 51 "/opt/tinyos-main/tos/chips/msp430/timer/Msp430TimerP.nc"
-uint8_t arg_0x7f0343e8a310);
+uint8_t arg_0x7f1a447dd310);
 # 48 "/opt/tinyos-main/tos/chips/msp430/timer/Msp430Timer.nc"
 static void /*Msp430TimerC.Msp430TimerA*/Msp430TimerP__0__Timer__overflow(void );
 # 126 "/opt/tinyos-main/tos/chips/msp430/timer/Msp430TimerP.nc"
@@ -3134,7 +3128,7 @@ static inline void /*Msp430TimerC.Msp430TimerA*/Msp430TimerP__0__Event__default_
 # 39 "/opt/tinyos-main/tos/chips/msp430/timer/Msp430TimerEvent.nc"
 static void /*Msp430TimerC.Msp430TimerB*/Msp430TimerP__1__Event__fired(
 # 51 "/opt/tinyos-main/tos/chips/msp430/timer/Msp430TimerP.nc"
-uint8_t arg_0x7f0343e8a310);
+uint8_t arg_0x7f1a447dd310);
 # 48 "/opt/tinyos-main/tos/chips/msp430/timer/Msp430Timer.nc"
 static void /*Msp430TimerC.Msp430TimerB*/Msp430TimerP__1__Timer__overflow(void );
 # 62 "/opt/tinyos-main/tos/chips/msp430/timer/Msp430TimerP.nc"
@@ -3575,7 +3569,7 @@ int main(void )   ;
 # 75 "/opt/tinyos-main/tos/interfaces/TaskBasic.nc"
 static void SchedulerBasicP__TaskBasic__runTask(
 # 56 "/opt/tinyos-main/tos/system/SchedulerBasicP.nc"
-uint8_t arg_0x7f0343fd39c0);
+uint8_t arg_0x7f1a449269c0);
 # 76 "/opt/tinyos-main/tos/interfaces/McuSleep.nc"
 static void SchedulerBasicP__McuSleep__sleep(void );
 # 61 "/opt/tinyos-main/tos/system/SchedulerBasicP.nc"
@@ -3960,7 +3954,7 @@ static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__TimerFrom__s
 
 static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__Timer__fired(
 # 48 "/opt/tinyos-main/tos/lib/timer/VirtualizeTimerC.nc"
-uint8_t arg_0x7f034396d020);
+uint8_t arg_0x7f1a442c0020);
 #line 71
 enum /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0____nesc_unnamed4298 {
 #line 71
@@ -4102,31 +4096,31 @@ static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__
 # 84 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
 static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__measureHumidityDone(
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11LogicP.nc"
-uint8_t arg_0x7f03438a8a60, 
+uint8_t arg_0x7f1a441fba60, 
 # 84 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
 error_t result, uint16_t val);
 #line 116
 static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__writeStatusRegDone(
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11LogicP.nc"
-uint8_t arg_0x7f03438a8a60, 
+uint8_t arg_0x7f1a441fba60, 
 # 116 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
 error_t result);
 #line 100
 static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__readStatusRegDone(
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11LogicP.nc"
-uint8_t arg_0x7f03438a8a60, 
+uint8_t arg_0x7f1a441fba60, 
 # 100 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
 error_t result, uint8_t val);
 #line 54
 static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__resetDone(
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11LogicP.nc"
-uint8_t arg_0x7f03438a8a60, 
+uint8_t arg_0x7f1a441fba60, 
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
 error_t result);
 #line 69
 static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__measureTemperatureDone(
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11LogicP.nc"
-uint8_t arg_0x7f03438a8a60, 
+uint8_t arg_0x7f1a441fba60, 
 # 69 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
 error_t result, uint16_t val);
 # 44 "/opt/tinyos-main/tos/interfaces/GeneralIO.nc"
@@ -4543,15 +4537,15 @@ static inline error_t /*HplSensirionSht11C.Arbiter.Queue*/FcfsResourceQueueC__0_
 # 53 "/opt/tinyos-main/tos/interfaces/ResourceRequested.nc"
 static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceRequested__requested(
 # 55 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436aacf0);
+uint8_t arg_0x7f1a43ffdcf0);
 # 65 "/opt/tinyos-main/tos/interfaces/ResourceConfigure.nc"
 static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceConfigure__unconfigure(
 # 60 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436a6240);
+uint8_t arg_0x7f1a43ff9240);
 # 59 "/opt/tinyos-main/tos/interfaces/ResourceConfigure.nc"
 static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceConfigure__configure(
 # 60 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436a6240);
+uint8_t arg_0x7f1a43ff9240);
 # 79 "/opt/tinyos-main/tos/interfaces/ResourceQueue.nc"
 static error_t /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__Queue__enqueue(resource_client_id_t id);
 #line 53
@@ -4565,7 +4559,7 @@ static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceDefaultOw
 # 102 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__Resource__granted(
 # 54 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436aba50);
+uint8_t arg_0x7f1a43ffea50);
 # 67 "/opt/tinyos-main/tos/interfaces/TaskBasic.nc"
 static error_t /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__grantedTask__postTask(void );
 # 75 "/opt/tinyos-main/tos/system/ArbiterP.nc"
@@ -4786,7 +4780,7 @@ static inline void /*PrintfC.SerialAMSenderC.AMQueueEntryP*/AMQueueEntryP__0__Se
 # 80 "/opt/tinyos-main/tos/interfaces/AMSend.nc"
 static error_t /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__AMSend__send(
 # 48 "/opt/tinyos-main/tos/system/AMQueueImplP.nc"
-am_id_t arg_0x7f03435adce0, 
+am_id_t arg_0x7f1a43f00ce0, 
 # 80 "/opt/tinyos-main/tos/interfaces/AMSend.nc"
 am_addr_t addr, 
 #line 71
@@ -4803,7 +4797,7 @@ uint8_t len);
 # 100 "/opt/tinyos-main/tos/interfaces/Send.nc"
 static void /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__Send__sendDone(
 # 46 "/opt/tinyos-main/tos/system/AMQueueImplP.nc"
-uint8_t arg_0x7f03435aea60, 
+uint8_t arg_0x7f1a43f01a60, 
 # 96 "/opt/tinyos-main/tos/interfaces/Send.nc"
 message_t * msg, 
 
@@ -4896,7 +4890,7 @@ uint8_t len);
 # 110 "/opt/tinyos-main/tos/interfaces/AMSend.nc"
 static void /*SerialActiveMessageC.AM*/SerialActiveMessageP__0__AMSend__sendDone(
 # 47 "/opt/tinyos-main/tos/lib/serial/SerialActiveMessageP.nc"
-am_id_t arg_0x7f0343550320, 
+am_id_t arg_0x7f1a43ea3320, 
 # 103 "/opt/tinyos-main/tos/interfaces/AMSend.nc"
 message_t * msg, 
 
@@ -4915,7 +4909,7 @@ message_t *
 
 /*SerialActiveMessageC.AM*/SerialActiveMessageP__0__Receive__receive(
 # 48 "/opt/tinyos-main/tos/lib/serial/SerialActiveMessageP.nc"
-am_id_t arg_0x7f034354f650, 
+am_id_t arg_0x7f1a43ea2650, 
 # 71 "/opt/tinyos-main/tos/interfaces/Receive.nc"
 message_t * msg, 
 void * payload, 
@@ -5400,7 +5394,7 @@ static error_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__rece
 # 100 "/opt/tinyos-main/tos/interfaces/Send.nc"
 static void /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__Send__sendDone(
 # 51 "/opt/tinyos-main/tos/lib/serial/SerialDispatcherP.nc"
-uart_id_t arg_0x7f0343416110, 
+uart_id_t arg_0x7f1a43d69110, 
 # 96 "/opt/tinyos-main/tos/interfaces/Send.nc"
 message_t * msg, 
 
@@ -5418,7 +5412,7 @@ message_t *
 
 /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__Receive__receive(
 # 50 "/opt/tinyos-main/tos/lib/serial/SerialDispatcherP.nc"
-uart_id_t arg_0x7f0343417570, 
+uart_id_t arg_0x7f1a43d6a570, 
 # 71 "/opt/tinyos-main/tos/interfaces/Receive.nc"
 message_t * msg, 
 void * payload, 
@@ -5431,17 +5425,17 @@ uint8_t len);
 # 31 "/opt/tinyos-main/tos/lib/serial/SerialPacketInfo.nc"
 static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__upperLength(
 # 54 "/opt/tinyos-main/tos/lib/serial/SerialDispatcherP.nc"
-uart_id_t arg_0x7f03434154d0, 
+uart_id_t arg_0x7f1a43d684d0, 
 # 31 "/opt/tinyos-main/tos/lib/serial/SerialPacketInfo.nc"
 message_t *msg, uint8_t dataLinkLen);
 #line 15
 static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__offset(
 # 54 "/opt/tinyos-main/tos/lib/serial/SerialDispatcherP.nc"
-uart_id_t arg_0x7f03434154d0);
+uart_id_t arg_0x7f1a43d684d0);
 # 23 "/opt/tinyos-main/tos/lib/serial/SerialPacketInfo.nc"
 static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__dataLinkLength(
 # 54 "/opt/tinyos-main/tos/lib/serial/SerialDispatcherP.nc"
-uart_id_t arg_0x7f03434154d0, 
+uart_id_t arg_0x7f1a43d684d0, 
 # 23 "/opt/tinyos-main/tos/lib/serial/SerialPacketInfo.nc"
 message_t *msg, uint8_t upperLen);
 # 71 "/opt/tinyos-main/tos/lib/serial/SendBytePacket.nc"
@@ -5640,17 +5634,17 @@ static inline void HdlcTranslateC__UartStream__receiveDone(uint8_t *buf, uint16_
 # 44 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartConfigure.nc"
 static msp430_uart_union_config_t */*Msp430Uart1P.UartP*/Msp430UartP__0__Msp430UartConfigure__getConfig(
 # 53 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343310510);
+uint8_t arg_0x7f1a43c63510);
 # 79 "/opt/tinyos-main/tos/interfaces/UartStream.nc"
 static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__receivedByte(
 # 48 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343315d30, 
+uint8_t arg_0x7f1a43c68d30, 
 # 79 "/opt/tinyos-main/tos/interfaces/UartStream.nc"
 uint8_t byte);
 #line 99
 static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__receiveDone(
 # 48 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343315d30, 
+uint8_t arg_0x7f1a43c68d30, 
 # 95 "/opt/tinyos-main/tos/interfaces/UartStream.nc"
 uint8_t * buf, 
 
@@ -5660,7 +5654,7 @@ uint16_t len, error_t error);
 #line 57
 static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__sendDone(
 # 48 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343315d30, 
+uint8_t arg_0x7f1a43c68d30, 
 # 53 "/opt/tinyos-main/tos/interfaces/UartStream.nc"
 uint8_t * buf, 
 
@@ -5670,19 +5664,19 @@ uint16_t len, error_t error);
 # 102 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static void /*Msp430Uart1P.UartP*/Msp430UartP__0__Resource__granted(
 # 46 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f034331bcd0);
+uint8_t arg_0x7f1a43c6ecd0);
 # 120 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__release(
 # 52 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343311240);
+uint8_t arg_0x7f1a43c64240);
 # 97 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__immediateRequest(
 # 52 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343311240);
+uint8_t arg_0x7f1a43c64240);
 # 128 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static bool /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__isOwner(
 # 52 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartP.nc"
-uint8_t arg_0x7f0343311240);
+uint8_t arg_0x7f1a43c64240);
 # 89 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/HplMsp430UsciA.nc"
 static void /*Msp430Uart1P.UartP*/Msp430UartP__0__Usci__resetUsci(bool reset);
 #line 118
@@ -5868,13 +5862,13 @@ static inline void HplMsp430UsciAB1RawInterruptsP__UsciB__default__rxDone(uint8_
 # 59 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
 static void /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interrupts__rxDone(
 # 41 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UsciShareP.nc"
-uint8_t arg_0x7f03431d75f0, 
+uint8_t arg_0x7f1a43b2a5f0, 
 # 59 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
 uint8_t data);
 #line 54
 static void /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interrupts__txDone(
 # 41 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UsciShareP.nc"
-uint8_t arg_0x7f03431d75f0);
+uint8_t arg_0x7f1a43b2a5f0);
 # 90 "/opt/tinyos-main/tos/interfaces/ArbiterInfo.nc"
 static bool /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__ArbiterInfo__inUse(void );
 
@@ -5924,15 +5918,15 @@ static inline resource_client_id_t /*Msp430UsciShareA1P.ArbiterC.Queue*/FcfsReso
 # 61 "/opt/tinyos-main/tos/interfaces/ResourceRequested.nc"
 static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceRequested__immediateRequested(
 # 55 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436aacf0);
+uint8_t arg_0x7f1a43ffdcf0);
 # 65 "/opt/tinyos-main/tos/interfaces/ResourceConfigure.nc"
 static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceConfigure__unconfigure(
 # 60 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436a6240);
+uint8_t arg_0x7f1a43ff9240);
 # 59 "/opt/tinyos-main/tos/interfaces/ResourceConfigure.nc"
 static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceConfigure__configure(
 # 60 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436a6240);
+uint8_t arg_0x7f1a43ff9240);
 # 53 "/opt/tinyos-main/tos/interfaces/ResourceQueue.nc"
 static bool /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__Queue__isEmpty(void );
 #line 70
@@ -5944,7 +5938,7 @@ static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceDefaultO
 # 102 "/opt/tinyos-main/tos/interfaces/Resource.nc"
 static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__Resource__granted(
 # 54 "/opt/tinyos-main/tos/system/ArbiterP.nc"
-uint8_t arg_0x7f03436aba50);
+uint8_t arg_0x7f1a43ffea50);
 # 67 "/opt/tinyos-main/tos/interfaces/TaskBasic.nc"
 static error_t /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__grantedTask__postTask(void );
 # 75 "/opt/tinyos-main/tos/system/ArbiterP.nc"
@@ -6199,30 +6193,17 @@ static uint8_t *SenseC__HuffmanTree__encode(int8_t *data, uint8_t length, TreeNo
 static void SenseC__Timer__startPeriodic(uint32_t dt);
 # 21 "SenseC.nc"
 uint16_t SenseC__prev_data = 0;
-int16_t SenseC__sub = 0;
-uint32_t SenseC__tmp;
-int8_t SenseC__tempArray[1];
 
 TreeNode *SenseC__root = (void *)0;
 TreeNode *SenseC__root2 = (void *)0;
-
-
-
-
-
-
-
-
-static inline void SenseC__toBinary(uint8_t *a);
-#line 49
+#line 47
 static inline void SenseC__Boot__booted(void );
 
 
 
 
-
 static inline void SenseC__Timer__fired(void );
-#line 89
+#line 68
 static void SenseC__Read__readDone(error_t result, uint16_t data);
 # 104 "/opt/tinyos-main/tos/interfaces/SplitControl.nc"
 static error_t SerialStartP__SerialControl__start(void );
@@ -6245,6 +6226,10 @@ static TreeNode *HuffmanTreeP__HuffmanNode__createNRM_TreeNode(int8_t diff);
 #line 2
 static TreeNode *HuffmanTreeP__HuffmanNode__createNYT_TreeNode(void );
 # 9 "HuffmanTreeP.nc"
+static size_t HuffmanTreeP__strlen(uint8_t *s);
+#line 25
+static inline void HuffmanTreeP__toBinary(uint8_t *a);
+#line 37
 static TreeNode *HuffmanTreeP__HuffmanTree__createEmptyTree(void );
 
 
@@ -6254,23 +6239,23 @@ static TreeNode *HuffmanTreeP__HuffmanTree__createEmptyTree(void );
 
 
 static HuffmanCode *HuffmanTreeP__createCode(void );
-#line 40
+#line 68
 static void HuffmanTreeP__addToCode(HuffmanCode *root, uint8_t value, uint8_t length);
-#line 64
-static inline uint8_t *HuffmanTreeP__convert(HuffmanCode *root);
 #line 92
+static inline uint8_t *HuffmanTreeP__convert(HuffmanCode *root);
+#line 121
 static void HuffmanTreeP__shiftLeft(uint8_t *code, uint8_t length);
-#line 108
+#line 137
 static TreeNode *HuffmanTreeP__search(TreeNode *root, TreeNode *node);
-#line 126
+#line 155
 static TreeNode *HuffmanTreeP__search_nyt(TreeNode *root);
-#line 144
+#line 173
 static void HuffmanTreeP__buildCode(TreeNode *root);
-#line 158
+#line 187
 static uint8_t HuffmanTreeP__traverse(TreeNode *root, uint8_t diff, uint8_t *prefixCode);
-#line 171
+#line 200
 static inline int8_t HuffmanTreeP__suffixCode(int8_t diff, int8_t *suffixCode);
-#line 189
+#line 218
 static inline uint8_t HuffmanTreeP__ConvertToBCD(int8_t diff, int8_t *BCDCode);
 
 
@@ -6288,7 +6273,7 @@ static void HuffmanTreeP__addNode(TreeNode *root, int8_t diff);
 
 
 static uint8_t HuffmanTreeP__reBalance_Step(TreeNode *root);
-#line 232
+#line 261
 static void HuffmanTreeP__reBalance(TreeNode *root);
 
 
@@ -6307,8 +6292,10 @@ static inline uint8_t HuffmanTreeP__getDataFromCode(Group *group, uint8_t *code,
 
 
 
+
+
 static inline uint8_t *HuffmanTreeP__HuffmanTree__encode(int8_t *data, uint8_t length, TreeNode *root);
-#line 280
+#line 311
 static inline int8_t *HuffmanTreeP__HuffmanTree__decode(uint8_t *code, TreeNode *root);
 # 6 "HuffmanGroupP.nc"
 const uint8_t HuffmanGroupP__GROUP0[1] = { 0 };
@@ -6417,9 +6404,9 @@ static inline void /*Msp430TimerC.Msp430TimerA*/Msp430TimerP__0__Event__default_
 }
 
 # 39 "/opt/tinyos-main/tos/chips/msp430/timer/Msp430TimerEvent.nc"
-inline static void /*Msp430TimerC.Msp430TimerA*/Msp430TimerP__0__Event__fired(uint8_t arg_0x7f0343e8a310){
+inline static void /*Msp430TimerC.Msp430TimerA*/Msp430TimerP__0__Event__fired(uint8_t arg_0x7f1a447dd310){
 #line 39
-  switch (arg_0x7f0343e8a310) {
+  switch (arg_0x7f1a447dd310) {
 #line 39
     case 0:
 #line 39
@@ -6447,7 +6434,7 @@ inline static void /*Msp430TimerC.Msp430TimerA*/Msp430TimerP__0__Event__fired(ui
 #line 39
     default:
 #line 39
-      /*Msp430TimerC.Msp430TimerA*/Msp430TimerP__0__Event__default__fired(arg_0x7f0343e8a310);
+      /*Msp430TimerC.Msp430TimerA*/Msp430TimerP__0__Event__default__fired(arg_0x7f1a447dd310);
 #line 39
       break;
 #line 39
@@ -8374,13 +8361,13 @@ inline static void /*PrintfC.SerialAMSenderC.AMQueueEntryP*/AMQueueEntryP__0__AM
 }
 #line 162
 # 80 "/opt/tinyos-main/tos/interfaces/AMSend.nc"
-inline static error_t /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__AMSend__send(am_id_t arg_0x7f03435adce0, am_addr_t addr, message_t * msg, uint8_t len){
+inline static error_t /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__AMSend__send(am_id_t arg_0x7f1a43f00ce0, am_addr_t addr, message_t * msg, uint8_t len){
 #line 80
   unsigned char __nesc_result;
 #line 80
 
 #line 80
-  __nesc_result = /*SerialActiveMessageC.AM*/SerialActiveMessageP__0__AMSend__send(arg_0x7f03435adce0, addr, msg, len);
+  __nesc_result = /*SerialActiveMessageC.AM*/SerialActiveMessageP__0__AMSend__send(arg_0x7f1a43f00ce0, addr, msg, len);
 #line 80
 
 #line 80
@@ -8579,13 +8566,13 @@ uint8_t upperLen)
 }
 
 # 23 "/opt/tinyos-main/tos/lib/serial/SerialPacketInfo.nc"
-inline static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__dataLinkLength(uart_id_t arg_0x7f03434154d0, message_t *msg, uint8_t upperLen){
+inline static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__dataLinkLength(uart_id_t arg_0x7f1a43d684d0, message_t *msg, uint8_t upperLen){
 #line 23
   unsigned char __nesc_result;
 #line 23
 
 #line 23
-  switch (arg_0x7f03434154d0) {
+  switch (arg_0x7f1a43d684d0) {
 #line 23
     case TOS_SERIAL_ACTIVE_MESSAGE_ID:
 #line 23
@@ -8595,7 +8582,7 @@ inline static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__
 #line 23
     default:
 #line 23
-      __nesc_result = /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__default__dataLinkLength(arg_0x7f03434154d0, msg, upperLen);
+      __nesc_result = /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__default__dataLinkLength(arg_0x7f1a43d684d0, msg, upperLen);
 #line 23
       break;
 #line 23
@@ -8622,13 +8609,13 @@ static inline uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__
 }
 
 # 15 "/opt/tinyos-main/tos/lib/serial/SerialPacketInfo.nc"
-inline static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__offset(uart_id_t arg_0x7f03434154d0){
+inline static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__offset(uart_id_t arg_0x7f1a43d684d0){
 #line 15
   unsigned char __nesc_result;
 #line 15
 
 #line 15
-  switch (arg_0x7f03434154d0) {
+  switch (arg_0x7f1a43d684d0) {
 #line 15
     case TOS_SERIAL_ACTIVE_MESSAGE_ID:
 #line 15
@@ -8638,7 +8625,7 @@ inline static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__
 #line 15
     default:
 #line 15
-      __nesc_result = /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__default__offset(arg_0x7f03434154d0);
+      __nesc_result = /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__default__offset(arg_0x7f1a43d684d0);
 #line 15
       break;
 #line 15
@@ -8744,9 +8731,9 @@ static inline void /*Msp430Uart1P.UartP*/Msp430UartP__0__Resource__default__gran
 }
 
 # 102 "/opt/tinyos-main/tos/interfaces/Resource.nc"
-inline static void /*Msp430Uart1P.UartP*/Msp430UartP__0__Resource__granted(uint8_t arg_0x7f034331bcd0){
+inline static void /*Msp430Uart1P.UartP*/Msp430UartP__0__Resource__granted(uint8_t arg_0x7f1a43c6ecd0){
 #line 102
-  switch (arg_0x7f034331bcd0) {
+  switch (arg_0x7f1a43c6ecd0) {
 #line 102
     case /*PlatformSerialC.UartC*/Msp430Uart1C__0__CLIENT_ID:
 #line 102
@@ -8756,7 +8743,7 @@ inline static void /*Msp430Uart1P.UartP*/Msp430UartP__0__Resource__granted(uint8
 #line 102
     default:
 #line 102
-      /*Msp430Uart1P.UartP*/Msp430UartP__0__Resource__default__granted(arg_0x7f034331bcd0);
+      /*Msp430Uart1P.UartP*/Msp430UartP__0__Resource__default__granted(arg_0x7f1a43c6ecd0);
 #line 102
       break;
 #line 102
@@ -8778,9 +8765,9 @@ static inline void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__Resource_
 }
 
 # 102 "/opt/tinyos-main/tos/interfaces/Resource.nc"
-inline static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__Resource__granted(uint8_t arg_0x7f03436aba50){
+inline static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__Resource__granted(uint8_t arg_0x7f1a43ffea50){
 #line 102
-  switch (arg_0x7f03436aba50) {
+  switch (arg_0x7f1a43ffea50) {
 #line 102
     case /*PlatformSerialC.UartC.UsciC*/Msp430UsciA1C__0__CLIENT_ID:
 #line 102
@@ -8790,7 +8777,7 @@ inline static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__Resource_
 #line 102
     default:
 #line 102
-      /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__Resource__default__granted(arg_0x7f03436aba50);
+      /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__Resource__default__granted(arg_0x7f1a43ffea50);
 #line 102
       break;
 #line 102
@@ -8805,9 +8792,9 @@ static inline void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceC
 }
 
 # 59 "/opt/tinyos-main/tos/interfaces/ResourceConfigure.nc"
-inline static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceConfigure__configure(uint8_t arg_0x7f03436a6240){
+inline static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceConfigure__configure(uint8_t arg_0x7f1a43ff9240){
 #line 59
-  switch (arg_0x7f03436a6240) {
+  switch (arg_0x7f1a43ff9240) {
 #line 59
     case /*PlatformSerialC.UartC.UsciC*/Msp430UsciA1C__0__CLIENT_ID:
 #line 59
@@ -8817,7 +8804,7 @@ inline static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceC
 #line 59
     default:
 #line 59
-      /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceConfigure__default__configure(arg_0x7f03436a6240);
+      /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceConfigure__default__configure(arg_0x7f1a43ff9240);
 #line 59
       break;
 #line 59
@@ -8856,13 +8843,13 @@ static inline msp430_uart_union_config_t */*Msp430Uart1P.UartP*/Msp430UartP__0__
 }
 
 # 44 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/Msp430UartConfigure.nc"
-inline static msp430_uart_union_config_t */*Msp430Uart1P.UartP*/Msp430UartP__0__Msp430UartConfigure__getConfig(uint8_t arg_0x7f0343310510){
+inline static msp430_uart_union_config_t */*Msp430Uart1P.UartP*/Msp430UartP__0__Msp430UartConfigure__getConfig(uint8_t arg_0x7f1a43c63510){
 #line 44
   union __nesc_unnamed4278 *__nesc_result;
 #line 44
 
 #line 44
-  switch (arg_0x7f0343310510) {
+  switch (arg_0x7f1a43c63510) {
 #line 44
     case /*PlatformSerialC.UartC*/Msp430Uart1C__0__CLIENT_ID:
 #line 44
@@ -8872,7 +8859,7 @@ inline static msp430_uart_union_config_t */*Msp430Uart1P.UartP*/Msp430UartP__0__
 #line 44
     default:
 #line 44
-      __nesc_result = /*Msp430Uart1P.UartP*/Msp430UartP__0__Msp430UartConfigure__default__getConfig(arg_0x7f0343310510);
+      __nesc_result = /*Msp430Uart1P.UartP*/Msp430UartP__0__Msp430UartConfigure__default__getConfig(arg_0x7f1a43c63510);
 #line 44
       break;
 #line 44
@@ -9058,9 +9045,9 @@ static inline void /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__Send__default
 }
 
 # 100 "/opt/tinyos-main/tos/interfaces/Send.nc"
-inline static void /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__Send__sendDone(uint8_t arg_0x7f03435aea60, message_t * msg, error_t error){
+inline static void /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__Send__sendDone(uint8_t arg_0x7f1a43f01a60, message_t * msg, error_t error){
 #line 100
-  switch (arg_0x7f03435aea60) {
+  switch (arg_0x7f1a43f01a60) {
 #line 100
     case 0U:
 #line 100
@@ -9070,7 +9057,7 @@ inline static void /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__Send__sendDon
 #line 100
     default:
 #line 100
-      /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__Send__default__sendDone(arg_0x7f03435aea60, msg, error);
+      /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__Send__default__sendDone(arg_0x7f1a43f01a60, msg, error);
 #line 100
       break;
 #line 100
@@ -9108,9 +9095,9 @@ static inline void /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__AMSend__sendD
 }
 
 # 110 "/opt/tinyos-main/tos/interfaces/AMSend.nc"
-inline static void /*SerialActiveMessageC.AM*/SerialActiveMessageP__0__AMSend__sendDone(am_id_t arg_0x7f0343550320, message_t * msg, error_t error){
+inline static void /*SerialActiveMessageC.AM*/SerialActiveMessageP__0__AMSend__sendDone(am_id_t arg_0x7f1a43ea3320, message_t * msg, error_t error){
 #line 110
-  /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__AMSend__sendDone(arg_0x7f0343550320, msg, error);
+  /*SerialAMQueueP.AMQueueImplP*/AMQueueImplP__0__AMSend__sendDone(arg_0x7f1a43ea3320, msg, error);
 #line 110
 }
 #line 110
@@ -9129,9 +9116,9 @@ static inline void /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__
 }
 
 # 100 "/opt/tinyos-main/tos/interfaces/Send.nc"
-inline static void /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__Send__sendDone(uart_id_t arg_0x7f0343416110, message_t * msg, error_t error){
+inline static void /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__Send__sendDone(uart_id_t arg_0x7f1a43d69110, message_t * msg, error_t error){
 #line 100
-  switch (arg_0x7f0343416110) {
+  switch (arg_0x7f1a43d69110) {
 #line 100
     case TOS_SERIAL_ACTIVE_MESSAGE_ID:
 #line 100
@@ -9141,7 +9128,7 @@ inline static void /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__
 #line 100
     default:
 #line 100
-      /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__Send__default__sendDone(arg_0x7f0343416110, msg, error);
+      /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__Send__default__sendDone(arg_0x7f1a43d69110, msg, error);
 #line 100
       break;
 #line 100
@@ -9342,13 +9329,13 @@ static inline message_t */*SerialActiveMessageC.AM*/SerialActiveMessageP__0__Rec
 }
 
 # 78 "/opt/tinyos-main/tos/interfaces/Receive.nc"
-inline static message_t * /*SerialActiveMessageC.AM*/SerialActiveMessageP__0__Receive__receive(am_id_t arg_0x7f034354f650, message_t * msg, void * payload, uint8_t len){
+inline static message_t * /*SerialActiveMessageC.AM*/SerialActiveMessageP__0__Receive__receive(am_id_t arg_0x7f1a43ea2650, message_t * msg, void * payload, uint8_t len){
 #line 78
   nx_struct message_t *__nesc_result;
 #line 78
 
 #line 78
-    __nesc_result = /*SerialActiveMessageC.AM*/SerialActiveMessageP__0__Receive__default__receive(arg_0x7f034354f650, msg, payload, len);
+    __nesc_result = /*SerialActiveMessageC.AM*/SerialActiveMessageP__0__Receive__default__receive(arg_0x7f1a43ea2650, msg, payload, len);
 #line 78
 
 #line 78
@@ -9373,13 +9360,13 @@ uint8_t len)
 }
 
 # 78 "/opt/tinyos-main/tos/interfaces/Receive.nc"
-inline static message_t * /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__Receive__receive(uart_id_t arg_0x7f0343417570, message_t * msg, void * payload, uint8_t len){
+inline static message_t * /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__Receive__receive(uart_id_t arg_0x7f1a43d6a570, message_t * msg, void * payload, uint8_t len){
 #line 78
   nx_struct message_t *__nesc_result;
 #line 78
 
 #line 78
-  switch (arg_0x7f0343417570) {
+  switch (arg_0x7f1a43d6a570) {
 #line 78
     case TOS_SERIAL_ACTIVE_MESSAGE_ID:
 #line 78
@@ -9389,7 +9376,7 @@ inline static message_t * /*SerialDispatcherC.SerialDispatcherP*/SerialDispatche
 #line 78
     default:
 #line 78
-      __nesc_result = /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__Receive__default__receive(arg_0x7f0343417570, msg, payload, len);
+      __nesc_result = /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__Receive__default__receive(arg_0x7f1a43d6a570, msg, payload, len);
 #line 78
       break;
 #line 78
@@ -9417,13 +9404,13 @@ uint8_t dataLinkLen)
 }
 
 # 31 "/opt/tinyos-main/tos/lib/serial/SerialPacketInfo.nc"
-inline static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__upperLength(uart_id_t arg_0x7f03434154d0, message_t *msg, uint8_t dataLinkLen){
+inline static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__upperLength(uart_id_t arg_0x7f1a43d684d0, message_t *msg, uint8_t dataLinkLen){
 #line 31
   unsigned char __nesc_result;
 #line 31
 
 #line 31
-  switch (arg_0x7f03434154d0) {
+  switch (arg_0x7f1a43d684d0) {
 #line 31
     case TOS_SERIAL_ACTIVE_MESSAGE_ID:
 #line 31
@@ -9433,7 +9420,7 @@ inline static uint8_t /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__
 #line 31
     default:
 #line 31
-      __nesc_result = /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__default__upperLength(arg_0x7f03434154d0, msg, dataLinkLen);
+      __nesc_result = /*SerialDispatcherC.SerialDispatcherP*/SerialDispatcherP__0__PacketInfo__default__upperLength(arg_0x7f1a43d684d0, msg, dataLinkLen);
 #line 31
       break;
 #line 31
@@ -9586,9 +9573,9 @@ static inline void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceC
 }
 
 # 65 "/opt/tinyos-main/tos/interfaces/ResourceConfigure.nc"
-inline static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceConfigure__unconfigure(uint8_t arg_0x7f03436a6240){
+inline static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceConfigure__unconfigure(uint8_t arg_0x7f1a43ff9240){
 #line 65
-  switch (arg_0x7f03436a6240) {
+  switch (arg_0x7f1a43ff9240) {
 #line 65
     case /*PlatformSerialC.UartC.UsciC*/Msp430UsciA1C__0__CLIENT_ID:
 #line 65
@@ -9598,7 +9585,7 @@ inline static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceC
 #line 65
     default:
 #line 65
-      /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceConfigure__default__unconfigure(arg_0x7f03436a6240);
+      /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceConfigure__default__unconfigure(arg_0x7f1a43ff9240);
 #line 65
       break;
 #line 65
@@ -9755,13 +9742,13 @@ static inline error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__defaul
 }
 
 # 120 "/opt/tinyos-main/tos/interfaces/Resource.nc"
-inline static error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__release(uint8_t arg_0x7f0343311240){
+inline static error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__release(uint8_t arg_0x7f1a43c64240){
 #line 120
   unsigned char __nesc_result;
 #line 120
 
 #line 120
-  switch (arg_0x7f0343311240) {
+  switch (arg_0x7f1a43c64240) {
 #line 120
     case /*PlatformSerialC.UartC*/Msp430Uart1C__0__CLIENT_ID:
 #line 120
@@ -9771,7 +9758,7 @@ inline static error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__releas
 #line 120
     default:
 #line 120
-      __nesc_result = /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__default__release(arg_0x7f0343311240);
+      __nesc_result = /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__default__release(arg_0x7f1a43c64240);
 #line 120
       break;
 #line 120
@@ -9792,13 +9779,13 @@ static inline error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__defaul
 }
 
 # 128 "/opt/tinyos-main/tos/interfaces/Resource.nc"
-inline static bool /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__isOwner(uint8_t arg_0x7f0343311240){
+inline static bool /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__isOwner(uint8_t arg_0x7f1a43c64240){
 #line 128
   unsigned char __nesc_result;
 #line 128
 
 #line 128
-  switch (arg_0x7f0343311240) {
+  switch (arg_0x7f1a43c64240) {
 #line 128
     case /*PlatformSerialC.UartC*/Msp430Uart1C__0__CLIENT_ID:
 #line 128
@@ -9808,7 +9795,7 @@ inline static bool /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__isOwner(u
 #line 128
     default:
 #line 128
-      __nesc_result = /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__default__isOwner(arg_0x7f0343311240);
+      __nesc_result = /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__default__isOwner(arg_0x7f1a43c64240);
 #line 128
       break;
 #line 128
@@ -10007,9 +9994,9 @@ static inline void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceR
 }
 
 # 61 "/opt/tinyos-main/tos/interfaces/ResourceRequested.nc"
-inline static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceRequested__immediateRequested(uint8_t arg_0x7f03436aacf0){
+inline static void /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceRequested__immediateRequested(uint8_t arg_0x7f1a43ffdcf0){
 #line 61
-    /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceRequested__default__immediateRequested(arg_0x7f03436aacf0);
+    /*Msp430UsciShareA1P.ArbiterC.Arbiter*/ArbiterP__1__ResourceRequested__default__immediateRequested(arg_0x7f1a43ffdcf0);
 #line 61
 }
 #line 61
@@ -10063,13 +10050,13 @@ static inline error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__defaul
 }
 
 # 97 "/opt/tinyos-main/tos/interfaces/Resource.nc"
-inline static error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__immediateRequest(uint8_t arg_0x7f0343311240){
+inline static error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__immediateRequest(uint8_t arg_0x7f1a43c64240){
 #line 97
   unsigned char __nesc_result;
 #line 97
 
 #line 97
-  switch (arg_0x7f0343311240) {
+  switch (arg_0x7f1a43c64240) {
 #line 97
     case /*PlatformSerialC.UartC*/Msp430Uart1C__0__CLIENT_ID:
 #line 97
@@ -10079,7 +10066,7 @@ inline static error_t /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__immedi
 #line 97
     default:
 #line 97
-      __nesc_result = /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__default__immediateRequest(arg_0x7f0343311240);
+      __nesc_result = /*Msp430Uart1P.UartP*/Msp430UartP__0__UsciResource__default__immediateRequest(arg_0x7f1a43c64240);
 #line 97
       break;
 #line 97
@@ -11070,9 +11057,9 @@ static inline void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__Resource__
 }
 
 # 102 "/opt/tinyos-main/tos/interfaces/Resource.nc"
-inline static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__Resource__granted(uint8_t arg_0x7f03436aba50){
+inline static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__Resource__granted(uint8_t arg_0x7f1a43ffea50){
 #line 102
-  switch (arg_0x7f03436aba50) {
+  switch (arg_0x7f1a43ffea50) {
 #line 102
     case /*SenseAppC.Sensor*/SensirionSht11C__0__TEMP_KEY:
 #line 102
@@ -11088,7 +11075,7 @@ inline static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__Resource__
 #line 102
     default:
 #line 102
-      /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__Resource__default__granted(arg_0x7f03436aba50);
+      /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__Resource__default__granted(arg_0x7f1a43ffea50);
 #line 102
       break;
 #line 102
@@ -11103,9 +11090,9 @@ static inline void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceCo
 }
 
 # 59 "/opt/tinyos-main/tos/interfaces/ResourceConfigure.nc"
-inline static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceConfigure__configure(uint8_t arg_0x7f03436a6240){
+inline static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceConfigure__configure(uint8_t arg_0x7f1a43ff9240){
 #line 59
-    /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceConfigure__default__configure(arg_0x7f03436a6240);
+    /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceConfigure__default__configure(arg_0x7f1a43ff9240);
 #line 59
 }
 #line 59
@@ -11580,9 +11567,9 @@ static inline void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceCo
 }
 
 # 65 "/opt/tinyos-main/tos/interfaces/ResourceConfigure.nc"
-inline static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceConfigure__unconfigure(uint8_t arg_0x7f03436a6240){
+inline static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceConfigure__unconfigure(uint8_t arg_0x7f1a43ff9240){
 #line 65
-    /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceConfigure__default__unconfigure(arg_0x7f03436a6240);
+    /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceConfigure__default__unconfigure(arg_0x7f1a43ff9240);
 #line 65
 }
 #line 65
@@ -11618,12 +11605,12 @@ inline static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceDe
 #line 46
 }
 #line 46
-# 64 "HuffmanTreeP.nc"
+# 92 "HuffmanTreeP.nc"
 static inline uint8_t *HuffmanTreeP__convert(HuffmanCode *root)
-#line 64
+#line 92
 {
   HuffmanCode *tmp = root;
-#line 65
+#line 93
   HuffmanCode *last = root->last;
   uint8_t count = 0;
   uint8_t *code;
@@ -11631,6 +11618,7 @@ static inline uint8_t *HuffmanTreeP__convert(HuffmanCode *root)
   last->value <<= 8 - last->size;
 
   while (tmp != (void *)0) {
+
       count++;
       tmp = tmp->next;
     }
@@ -11733,9 +11721,9 @@ inline static Group *HuffmanTreeP__HuffmanGroup__fromDiffToGroup(int8_t diff){
 #line 2
 }
 #line 2
-# 171 "HuffmanTreeP.nc"
+# 200 "HuffmanTreeP.nc"
 static inline int8_t HuffmanTreeP__suffixCode(int8_t diff, int8_t *suffixCode)
-#line 171
+#line 200
 {
   uint16_t index;
   Group *g = HuffmanTreeP__HuffmanGroup__fromDiffToGroup(diff);
@@ -11743,10 +11731,10 @@ static inline int8_t HuffmanTreeP__suffixCode(int8_t diff, int8_t *suffixCode)
 
   index = HuffmanTreeP__HuffmanGroup__getIndexByData(g, diff);
 
-  if (diff < 0) {
+  if (diff <= 0) {
       *suffixCode = g->size - index - 1;
     }
-  if (diff >= 0) {
+  if (diff > 0) {
       *suffixCode = g->size + index;
     }
 
@@ -11755,7 +11743,7 @@ static inline int8_t HuffmanTreeP__suffixCode(int8_t diff, int8_t *suffixCode)
 }
 
 static inline uint8_t HuffmanTreeP__ConvertToBCD(int8_t diff, int8_t *BCDCode)
-#line 189
+#line 218
 {
   *BCDCode = diff;
   return 8;
@@ -11776,18 +11764,18 @@ inline static TreeNode *HuffmanTreeP__HuffmanNode__createNRM_TreeNode(int8_t dif
 #line 3
 }
 #line 3
-# 250 "HuffmanTreeP.nc"
+# 281 "HuffmanTreeP.nc"
 static inline uint8_t *HuffmanTreeP__HuffmanTree__encode(int8_t *data, uint8_t length, TreeNode *root)
-#line 250
+#line 281
 {
   HuffmanCode *code = HuffmanTreeP__createCode();
   TreeNode *temp;
   uint8_t preCode;
-#line 253
+#line 284
   uint8_t preCodeLength;
-#line 253
+#line 284
   uint8_t sufCodeLength;
-#line 253
+#line 284
   uint8_t i;
   int8_t sufCode;
 
@@ -11802,7 +11790,7 @@ static inline uint8_t *HuffmanTreeP__HuffmanTree__encode(int8_t *data, uint8_t l
           HuffmanTreeP__reBalance(root);
         }
       else 
-#line 265
+#line 296
         {
           preCodeLength = HuffmanTreeP__traverse(root, data[i], &preCode);
           sufCodeLength = HuffmanTreeP__suffixCode(data[i], &sufCode);
@@ -11880,37 +11868,6 @@ inline static TreeNode *HuffmanTreeP__HuffmanNode__createNYT_TreeNode(void ){
 #line 2
 }
 #line 2
-# 36 "SenseC.nc"
-static inline void SenseC__toBinary(uint8_t *a)
-{
-  uint8_t i;
-#line 38
-  uint8_t j;
-
-  for (i = 0; i < 4; i++) {
-      for (j = 0x80; j != 0; j >>= 1) 
-        printf("%c", a[i] & j ? '1' : '0');
-    }
-
-  printf("\n");
-  printfflush();
-}
-
-# 50 "/opt/tinyos-main/tos/interfaces/Queue.nc"
-inline static bool PrintfP__Queue__empty(void ){
-#line 50
-  unsigned char __nesc_result;
-#line 50
-
-#line 50
-  __nesc_result = /*PrintfC.QueueC*/QueueC__0__Queue__empty();
-#line 50
-
-#line 50
-  return __nesc_result;
-#line 50
-}
-#line 50
 # 59 "HuffmanGroupP.nc"
 static inline uint8_t HuffmanGroupP__HuffmanGroup__getDataByIndex(uint8_t index, Group *g)
 #line 59
@@ -11940,53 +11897,86 @@ inline static uint8_t HuffmanTreeP__HuffmanGroup__getDataByIndex(uint8_t index, 
 #line 3
 }
 #line 3
-# 241 "HuffmanTreeP.nc"
+# 270 "HuffmanTreeP.nc"
 static inline uint8_t HuffmanTreeP__getDataFromCode(Group *group, uint8_t *code, uint8_t length)
-#line 241
+#line 270
 {
   uint8_t data;
-#line 242
+#line 271
   uint8_t tmp = code[0];
 
   tmp >>= 8 - length;
+  printf("tmp: %2x\n", tmp);
   data = HuffmanTreeP__HuffmanGroup__getDataByIndex(tmp, group);
+  printf("data: %d\n", data);
 
   return data;
 }
 
-#line 280
+#line 25
+static inline void HuffmanTreeP__toBinary(uint8_t *a)
+{
+  uint8_t i;
+#line 27
+  uint8_t j;
+
+  for (i = 0; i < 4; i++) {
+      for (j = 0x80; j != 0; j >>= 1) 
+        printf("%c", a[i] & j ? '1' : '0');
+    }
+
+  printf("\n");
+  printfflush();
+}
+
+#line 311
 static inline int8_t *HuffmanTreeP__HuffmanTree__decode(uint8_t *code, TreeNode *root)
-#line 280
+#line 311
 {
   TreeNode *currentNode;
   int8_t *dataArray = malloc(10);
-#line 282
+#line 313
   int8_t data_count = 0;
   uint8_t count = 0;
-#line 283
-  uint8_t codeLength = strlen(code) * 8;
+#line 314
+  uint8_t codeLength = HuffmanTreeP__strlen(code) * 8;
   uint8_t sufCodeLength = 0;
+
+  codeLength = codeLength == 0 ? 8 : codeLength;
+  printf("decoding code: ");
+  HuffmanTreeP__toBinary(code);
+  printf("code length %d\n", codeLength);
 
   while (count < codeLength) {
       currentNode = root;
+      printf("root->flag %d\n", currentNode->flag);
 
       if (currentNode->flag == 10) {
+          printf("NYT NODE: data: %d\n", code[0]);
           dataArray[data_count++] = code[0];
           HuffmanTreeP__addNode(root, code[0]);
+          printf("decode node group: %d\n", root->r_child->group->number);
           count += 8;
           HuffmanTreeP__shiftLeft(code, 8);
         }
       else {
-#line 294
+#line 333
         if (currentNode->flag == 12) {
-
+            printf("code[0]: %2x\n &0x80: %d\n", code[0], code[0] & 0x80);
+            if (code[0] == 0 && codeLength - count < 8) {
+#line 335
+              break;
+              }
+#line 336
             while ((code[0] & 0x80) == 0 && currentNode->flag != 10) {
+                printf("duyet ki tu 0\n");
                 currentNode = currentNode->l_child;
                 count++;
                 HuffmanTreeP__shiftLeft(code, 1);
               }
 
             if (currentNode->flag == 10) {
+                printf("NYT Node, value: %d\n", code[0]);
                 dataArray[data_count++] = code[0];
 
                 HuffmanTreeP__addNode(root, code[0]);
@@ -11996,7 +11986,7 @@ static inline int8_t *HuffmanTreeP__HuffmanTree__decode(uint8_t *code, TreeNode 
                 HuffmanTreeP__shiftLeft(code, 8);
               }
             else {
-#line 310
+#line 352
               if (currentNode->flag == 12) {
 
 
@@ -12016,7 +12006,7 @@ static inline int8_t *HuffmanTreeP__HuffmanTree__decode(uint8_t *code, TreeNode 
           }
         }
     }
-#line 327
+#line 369
   return dataArray;
 }
 
@@ -12035,6 +12025,21 @@ inline static int8_t *SenseC__HuffmanTree__decode(uint8_t *code, TreeNode *root)
 #line 4
 }
 #line 4
+# 50 "/opt/tinyos-main/tos/interfaces/Queue.nc"
+inline static bool PrintfP__Queue__empty(void ){
+#line 50
+  unsigned char __nesc_result;
+#line 50
+
+#line 50
+  __nesc_result = /*PrintfC.QueueC*/QueueC__0__Queue__empty();
+#line 50
+
+#line 50
+  return __nesc_result;
+#line 50
+}
+#line 50
 # 112 "/opt/tinyos-main/tos/lib/power/PowerManagerP.nc"
 static inline void /*HplSensirionSht11C.SplitControlPowerManagerC.PowerManager*/PowerManagerP__0__SplitControl__stopDone(error_t error)
 #line 112
@@ -12088,9 +12093,9 @@ static inline void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11Logi
 }
 
 # 84 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
-inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__measureHumidityDone(uint8_t arg_0x7f03438a8a60, error_t result, uint16_t val){
+inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__measureHumidityDone(uint8_t arg_0x7f1a441fba60, error_t result, uint16_t val){
 #line 84
-  switch (arg_0x7f03438a8a60) {
+  switch (arg_0x7f1a441fba60) {
 #line 84
     case /*SenseAppC.Sensor*/SensirionSht11C__0__TEMP_KEY:
 #line 84
@@ -12106,7 +12111,7 @@ inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11Logi
 #line 84
     default:
 #line 84
-      /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__measureHumidityDone(arg_0x7f03438a8a60, result, val);
+      /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__measureHumidityDone(arg_0x7f1a441fba60, result, val);
 #line 84
       break;
 #line 84
@@ -12135,9 +12140,9 @@ static inline void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11Logi
 }
 
 # 69 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
-inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__measureTemperatureDone(uint8_t arg_0x7f03438a8a60, error_t result, uint16_t val){
+inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__measureTemperatureDone(uint8_t arg_0x7f1a441fba60, error_t result, uint16_t val){
 #line 69
-  switch (arg_0x7f03438a8a60) {
+  switch (arg_0x7f1a441fba60) {
 #line 69
     case /*SenseAppC.Sensor*/SensirionSht11C__0__TEMP_KEY:
 #line 69
@@ -12153,7 +12158,7 @@ inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11Logi
 #line 69
     default:
 #line 69
-      /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__measureTemperatureDone(arg_0x7f03438a8a60, result, val);
+      /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__measureTemperatureDone(arg_0x7f1a441fba60, result, val);
 #line 69
       break;
 #line 69
@@ -12232,9 +12237,9 @@ static inline void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11Logi
 }
 
 # 116 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
-inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__writeStatusRegDone(uint8_t arg_0x7f03438a8a60, error_t result){
+inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__writeStatusRegDone(uint8_t arg_0x7f1a441fba60, error_t result){
 #line 116
-  switch (arg_0x7f03438a8a60) {
+  switch (arg_0x7f1a441fba60) {
 #line 116
     case /*SenseAppC.Sensor*/SensirionSht11C__0__TEMP_KEY:
 #line 116
@@ -12250,7 +12255,7 @@ inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11Logi
 #line 116
     default:
 #line 116
-      /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__writeStatusRegDone(arg_0x7f03438a8a60, result);
+      /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__writeStatusRegDone(arg_0x7f1a441fba60, result);
 #line 116
       break;
 #line 116
@@ -12278,9 +12283,9 @@ static inline void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11Logi
 }
 
 # 100 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
-inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__readStatusRegDone(uint8_t arg_0x7f03438a8a60, error_t result, uint8_t val){
+inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__readStatusRegDone(uint8_t arg_0x7f1a441fba60, error_t result, uint8_t val){
 #line 100
-  switch (arg_0x7f03438a8a60) {
+  switch (arg_0x7f1a441fba60) {
 #line 100
     case /*SenseAppC.Sensor*/SensirionSht11C__0__TEMP_KEY:
 #line 100
@@ -12296,7 +12301,7 @@ inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11Logi
 #line 100
     default:
 #line 100
-      /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__readStatusRegDone(arg_0x7f03438a8a60, result, val);
+      /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__readStatusRegDone(arg_0x7f1a441fba60, result, val);
 #line 100
       break;
 #line 100
@@ -12550,9 +12555,9 @@ static inline void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceRe
 }
 
 # 53 "/opt/tinyos-main/tos/interfaces/ResourceRequested.nc"
-inline static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceRequested__requested(uint8_t arg_0x7f03436aacf0){
+inline static void /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceRequested__requested(uint8_t arg_0x7f1a43ffdcf0){
 #line 53
-    /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceRequested__default__requested(arg_0x7f03436aacf0);
+    /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__ResourceRequested__default__requested(arg_0x7f1a43ffdcf0);
 #line 53
 }
 #line 53
@@ -12660,21 +12665,26 @@ inline static TreeNode *SenseC__HuffmanTree__createEmptyTree(void ){
 #line 2
 }
 #line 2
-# 55 "SenseC.nc"
+# 52 "SenseC.nc"
 static inline void SenseC__Timer__fired(void )
 {
-
-
-
-
-
   if (SenseC__root == (void *)0) {
       SenseC__root = SenseC__HuffmanTree__createEmptyTree();
+    }
+  else 
+#line 56
+    {
+      printf("root | group: %d weight: %d\n", SenseC__root->r_child->group->number, SenseC__root->r_child->weight);
     }
   if (SenseC__root2 == (void *)0) {
       SenseC__root2 = SenseC__HuffmanTree__createEmptyTree();
     }
-#line 86
+  else 
+#line 61
+    {
+      printf("root2 | group: %d weight: %d\n", SenseC__root2->r_child->group->number, SenseC__root2->r_child->weight);
+    }
+
   SenseC__Read__read();
 }
 
@@ -12840,9 +12850,9 @@ static inline void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11Logi
 }
 
 # 54 "/opt/tinyos-main/tos/chips/sht11/SensirionSht11.nc"
-inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__resetDone(uint8_t arg_0x7f03438a8a60, error_t result){
+inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__resetDone(uint8_t arg_0x7f1a441fba60, error_t result){
 #line 54
-  switch (arg_0x7f03438a8a60) {
+  switch (arg_0x7f1a441fba60) {
 #line 54
     case /*SenseAppC.Sensor*/SensirionSht11C__0__TEMP_KEY:
 #line 54
@@ -12858,7 +12868,7 @@ inline static void /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11Logi
 #line 54
     default:
 #line 54
-      /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__resetDone(arg_0x7f03438a8a60, result);
+      /*HalSensirionSht11C.SensirionSht11LogicP*/SensirionSht11LogicP__0__SensirionSht11__default__resetDone(arg_0x7f1a441fba60, result);
 #line 54
       break;
 #line 54
@@ -12903,9 +12913,9 @@ static inline void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__Timer
 }
 
 # 83 "/opt/tinyos-main/tos/lib/timer/Timer.nc"
-inline static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__Timer__fired(uint8_t arg_0x7f034396d020){
+inline static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__Timer__fired(uint8_t arg_0x7f1a442c0020){
 #line 83
-  switch (arg_0x7f034396d020) {
+  switch (arg_0x7f1a442c0020) {
 #line 83
     case 0U:
 #line 83
@@ -12927,7 +12937,7 @@ inline static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__Timer
 #line 83
     default:
 #line 83
-      /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__Timer__default__fired(arg_0x7f034396d020);
+      /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__Timer__default__fired(arg_0x7f1a442c0020);
 #line 83
       break;
 #line 83
@@ -13230,12 +13240,11 @@ inline static void SenseC__Leds__led2On(void ){
 #line 89
 }
 #line 89
-# 49 "SenseC.nc"
+# 47 "SenseC.nc"
 static inline void SenseC__Boot__booted(void )
-#line 49
+#line 47
 {
   SenseC__Leds__led2On();
-  printf("dsadas\n");
   SenseC__Timer__startPeriodic(2000);
 }
 
@@ -13968,9 +13977,9 @@ static inline void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__default__re
 }
 
 # 79 "/opt/tinyos-main/tos/interfaces/UartStream.nc"
-inline static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__receivedByte(uint8_t arg_0x7f0343315d30, uint8_t byte){
+inline static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__receivedByte(uint8_t arg_0x7f1a43c68d30, uint8_t byte){
 #line 79
-  switch (arg_0x7f0343315d30) {
+  switch (arg_0x7f1a43c68d30) {
 #line 79
     case /*PlatformSerialC.UartC*/Msp430Uart1C__0__CLIENT_ID:
 #line 79
@@ -13980,7 +13989,7 @@ inline static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__receivedByt
 #line 79
     default:
 #line 79
-      /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__default__receivedByte(arg_0x7f0343315d30, byte);
+      /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__default__receivedByte(arg_0x7f1a43c68d30, byte);
 #line 79
       break;
 #line 79
@@ -14001,9 +14010,9 @@ static inline void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__default__re
 }
 
 # 99 "/opt/tinyos-main/tos/interfaces/UartStream.nc"
-inline static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__receiveDone(uint8_t arg_0x7f0343315d30, uint8_t * buf, uint16_t len, error_t error){
+inline static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__receiveDone(uint8_t arg_0x7f1a43c68d30, uint8_t * buf, uint16_t len, error_t error){
 #line 99
-  switch (arg_0x7f0343315d30) {
+  switch (arg_0x7f1a43c68d30) {
 #line 99
     case /*PlatformSerialC.UartC*/Msp430Uart1C__0__CLIENT_ID:
 #line 99
@@ -14013,7 +14022,7 @@ inline static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__receiveDone
 #line 99
     default:
 #line 99
-      /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__default__receiveDone(arg_0x7f0343315d30, buf, len, error);
+      /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__default__receiveDone(arg_0x7f1a43c68d30, buf, len, error);
 #line 99
       break;
 #line 99
@@ -14050,9 +14059,9 @@ static inline void /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interru
 }
 
 # 59 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
-inline static void /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interrupts__rxDone(uint8_t arg_0x7f03431d75f0, uint8_t data){
+inline static void /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interrupts__rxDone(uint8_t arg_0x7f1a43b2a5f0, uint8_t data){
 #line 59
-  switch (arg_0x7f03431d75f0) {
+  switch (arg_0x7f1a43b2a5f0) {
 #line 59
     case /*PlatformSerialC.UartC.UsciC*/Msp430UsciA1C__0__CLIENT_ID:
 #line 59
@@ -14062,7 +14071,7 @@ inline static void /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interru
 #line 59
     default:
 #line 59
-      /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interrupts__default__rxDone(arg_0x7f03431d75f0, data);
+      /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interrupts__default__rxDone(arg_0x7f1a43b2a5f0, data);
 #line 59
       break;
 #line 59
@@ -14392,9 +14401,9 @@ static inline void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__default__se
 }
 
 # 57 "/opt/tinyos-main/tos/interfaces/UartStream.nc"
-inline static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__sendDone(uint8_t arg_0x7f0343315d30, uint8_t * buf, uint16_t len, error_t error){
+inline static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__sendDone(uint8_t arg_0x7f1a43c68d30, uint8_t * buf, uint16_t len, error_t error){
 #line 57
-  switch (arg_0x7f0343315d30) {
+  switch (arg_0x7f1a43c68d30) {
 #line 57
     case /*PlatformSerialC.UartC*/Msp430Uart1C__0__CLIENT_ID:
 #line 57
@@ -14404,7 +14413,7 @@ inline static void /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__sendDone(ui
 #line 57
     default:
 #line 57
-      /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__default__sendDone(arg_0x7f0343315d30, buf, len, error);
+      /*Msp430Uart1P.UartP*/Msp430UartP__0__UartStream__default__sendDone(arg_0x7f1a43c68d30, buf, len, error);
 #line 57
       break;
 #line 57
@@ -14474,9 +14483,9 @@ static inline void /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interru
 }
 
 # 54 "/opt/tinyos-main/tos/chips/msp430/x2xxx/usci/HplMsp430UsciInterrupts.nc"
-inline static void /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interrupts__txDone(uint8_t arg_0x7f03431d75f0){
+inline static void /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interrupts__txDone(uint8_t arg_0x7f1a43b2a5f0){
 #line 54
-  switch (arg_0x7f03431d75f0) {
+  switch (arg_0x7f1a43b2a5f0) {
 #line 54
     case /*PlatformSerialC.UartC.UsciC*/Msp430UsciA1C__0__CLIENT_ID:
 #line 54
@@ -14486,7 +14495,7 @@ inline static void /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interru
 #line 54
     default:
 #line 54
-      /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interrupts__default__txDone(arg_0x7f03431d75f0);
+      /*Msp430UsciShareA1P.UsciShareP*/Msp430UsciShareP__0__Interrupts__default__txDone(arg_0x7f1a43b2a5f0);
 #line 54
       break;
 #line 54
@@ -14923,9 +14932,9 @@ static void /*Msp430TimerC.Msp430TimerB*/Msp430TimerP__1__Event__default__fired(
 }
 
 # 39 "/opt/tinyos-main/tos/chips/msp430/timer/Msp430TimerEvent.nc"
-static void /*Msp430TimerC.Msp430TimerB*/Msp430TimerP__1__Event__fired(uint8_t arg_0x7f0343e8a310){
+static void /*Msp430TimerC.Msp430TimerB*/Msp430TimerP__1__Event__fired(uint8_t arg_0x7f1a447dd310){
 #line 39
-  switch (arg_0x7f0343e8a310) {
+  switch (arg_0x7f1a447dd310) {
 #line 39
     case 0:
 #line 39
@@ -14977,7 +14986,7 @@ static void /*Msp430TimerC.Msp430TimerB*/Msp430TimerP__1__Event__fired(uint8_t a
 #line 39
     default:
 #line 39
-      /*Msp430TimerC.Msp430TimerB*/Msp430TimerP__1__Event__default__fired(arg_0x7f0343e8a310);
+      /*Msp430TimerC.Msp430TimerB*/Msp430TimerP__1__Event__default__fired(arg_0x7f1a447dd310);
 #line 39
       break;
 #line 39
@@ -15245,9 +15254,9 @@ static void SchedulerBasicP__TaskBasic__default__runTask(uint8_t id)
 }
 
 # 75 "/opt/tinyos-main/tos/interfaces/TaskBasic.nc"
-static void SchedulerBasicP__TaskBasic__runTask(uint8_t arg_0x7f0343fd39c0){
+static void SchedulerBasicP__TaskBasic__runTask(uint8_t arg_0x7f1a449269c0){
 #line 75
-  switch (arg_0x7f0343fd39c0) {
+  switch (arg_0x7f1a449269c0) {
 #line 75
     case /*HilTimerMilliC.AlarmToTimerC*/AlarmToTimerC__0__fired:
 #line 75
@@ -15359,7 +15368,7 @@ static void SchedulerBasicP__TaskBasic__runTask(uint8_t arg_0x7f0343fd39c0){
 #line 75
     default:
 #line 75
-      SchedulerBasicP__TaskBasic__default__runTask(arg_0x7f0343fd39c0);
+      SchedulerBasicP__TaskBasic__default__runTask(arg_0x7f1a449269c0);
 #line 75
       break;
 #line 75
@@ -15954,52 +15963,53 @@ static error_t /*HplSensirionSht11C.Arbiter.Arbiter*/ArbiterP__0__Resource__rele
   return FAIL;
 }
 
-# 89 "SenseC.nc"
+# 68 "SenseC.nc"
 static void SenseC__Read__readDone(error_t result, uint16_t data)
 {
   uint8_t *code;
-#line 91
+#line 70
   uint8_t i;
   int8_t *dataArray;
+  int16_t sub = 0;
+  int32_t tmp;
+  int8_t tempArray[1];
 
-#line 93
-  SenseC__sub = data - SenseC__prev_data;
-  if (SenseC__sub < 0) {
-      SenseC__tmp = -SenseC__sub / 10;
+  if (SenseC__prev_data == 0) {
+      sub = 0;
+      tmp = 0;
+      SenseC__prev_data = data;
     }
   else 
-#line 96
+#line 80
     {
-      SenseC__tmp = SenseC__sub / 10;
+      sub = data - SenseC__prev_data;
+      if (sub < 0) {
+          tmp = -sub / 10;
+        }
+      else 
+#line 84
+        {
+          tmp = sub / 10;
+        }
     }
-
-  if (SenseC__tmp < 1) {
-      printf("nho hon ");
-    }
-  else 
-#line 102
-    {
-      printf("lon hon ");
-    }
-
 
   printf("sub: ");
-#line 107
-  printfFloat(0.01 * SenseC__sub);
+#line 89
+  printfFloat(0.01 * sub);
   printf("data: ");
-#line 108
+#line 90
   printfFloat(-39.6 + 0.01 * data);
   printf("prev: ");
-#line 109
+#line 91
   printfFloat(-39.6 + 0.01 * SenseC__prev_data);
-  printf("tmp: %ld\n", SenseC__tmp);
+  printf("tmp: %d\n", (int8_t )tmp);
 
-  SenseC__tempArray[0] = SenseC__tmp;
+  tempArray[0] = (int8_t )tmp;
 
-  code = SenseC__HuffmanTree__encode(SenseC__tempArray, 1, SenseC__root);
+  code = SenseC__HuffmanTree__encode(tempArray, 1, SenseC__root);
 
-  printf("code %ld\n ", strlen(code));
-  SenseC__toBinary(code);
+
+
 
   dataArray = SenseC__HuffmanTree__decode(code, SenseC__root2);
 
@@ -16007,17 +16017,13 @@ static void SenseC__Read__readDone(error_t result, uint16_t data)
   for (i = 0; i < 1; i++) {
       printf("%d ", dataArray[0]);
     }
-  printf("\n");
-  printfflush();
-
+  printf("\n\n");
   free(code);
   free(dataArray);
 
-
-
   printfflush();
 
-  if (SenseC__tmp >= 1) {
+  if (tmp >= 1) {
     SenseC__prev_data = data;
     }
 }
@@ -16064,9 +16070,9 @@ static void printfFloat(float toBePrinted)
   printf("%c%ld.%d%d%d ", c, fi, (uint8_t )f0, (uint8_t )f1, (uint8_t )f2);
 }
 
-# 17 "HuffmanTreeP.nc"
+# 45 "HuffmanTreeP.nc"
 static HuffmanCode *HuffmanTreeP__createCode(void )
-#line 17
+#line 45
 {
   HuffmanCode *code = malloc(sizeof(HuffmanCode ));
 
@@ -16115,27 +16121,27 @@ static Group *HuffmanGroupP__HuffmanGroup__fromDiffToGroup(int8_t diff)
   return g;
 }
 
-# 108 "HuffmanTreeP.nc"
+# 137 "HuffmanTreeP.nc"
 static TreeNode *HuffmanTreeP__search(TreeNode *root, TreeNode *node)
-#line 108
+#line 137
 {
   TreeNode *left;
-#line 109
+#line 138
   TreeNode *right;
 
-#line 110
+#line 139
   if (root != (void *)0) {
       if (root->group->number == node->group->number) {
           return root;
         }
       else 
-#line 113
+#line 142
         {
           left = HuffmanTreeP__search(root->l_child, node);
           if (left != (void *)0) {
             return left;
             }
-#line 117
+#line 146
           right = HuffmanTreeP__search(root->r_child, node);
           if (right != (void *)0) {
             return right;
@@ -16145,9 +16151,9 @@ static TreeNode *HuffmanTreeP__search(TreeNode *root, TreeNode *node)
   return (void *)0;
 }
 
-#line 158
+#line 187
 static uint8_t HuffmanTreeP__traverse(TreeNode *root, uint8_t diff, uint8_t *prefixCode)
-#line 158
+#line 187
 {
   TreeNode *node;
 
@@ -16161,27 +16167,27 @@ static uint8_t HuffmanTreeP__traverse(TreeNode *root, uint8_t diff, uint8_t *pre
   return node->codeLength;
 }
 
-#line 126
+#line 155
 static TreeNode *HuffmanTreeP__search_nyt(TreeNode *root)
-#line 126
+#line 155
 {
   TreeNode *left;
-#line 127
+#line 156
   TreeNode *right;
 
-#line 128
+#line 157
   if (root != (void *)0) {
       if (root->flag == 10) {
           return root;
         }
       else 
-#line 131
+#line 160
         {
           left = HuffmanTreeP__search_nyt(root->l_child);
           if (left != (void *)0) {
             return left;
             }
-#line 135
+#line 164
           right = HuffmanTreeP__search_nyt(root->r_child);
           if (right != (void *)0) {
             return right;
@@ -16191,9 +16197,9 @@ static TreeNode *HuffmanTreeP__search_nyt(TreeNode *root)
   return (void *)0;
 }
 
-#line 194
+#line 223
 static void HuffmanTreeP__addNode(TreeNode *root, int8_t diff)
-#line 194
+#line 223
 {
   TreeNode *nyt = HuffmanTreeP__HuffmanNode__createNYT_TreeNode();
   TreeNode *nrm = HuffmanTreeP__HuffmanNode__createNRM_TreeNode(diff);
@@ -16224,13 +16230,13 @@ static TreeNode *HuffmanNodeP__HuffmanNode__createNYT_TreeNode(void )
   return node;
 }
 
-# 232 "HuffmanTreeP.nc"
+# 261 "HuffmanTreeP.nc"
 static void HuffmanTreeP__reBalance(TreeNode *root)
-#line 232
+#line 261
 {
   uint8_t count;
 
-#line 234
+#line 263
   count = HuffmanTreeP__reBalance_Step(root);
   while (count != 0) {
       count = HuffmanTreeP__reBalance_Step(root);
@@ -16238,15 +16244,15 @@ static void HuffmanTreeP__reBalance(TreeNode *root)
   HuffmanTreeP__buildCode(root);
 }
 
-#line 205
+#line 234
 static uint8_t HuffmanTreeP__reBalance_Step(TreeNode *root)
-#line 205
+#line 234
 {
   TreeNode *upper_node = (void *)0;
-#line 206
+#line 235
   TreeNode *lower_node = (void *)0;
   uint8_t upper_weight;
-#line 207
+#line 236
   uint8_t lower_weight;
 
   if (root->r_child) {
@@ -16272,9 +16278,9 @@ static uint8_t HuffmanTreeP__reBalance_Step(TreeNode *root)
   return 0;
 }
 
-#line 144
+#line 173
 static void HuffmanTreeP__buildCode(TreeNode *root)
-#line 144
+#line 173
 {
   if (root->l_child) {
       root->l_child->huffmanCode = root->huffmanCode << 1;
@@ -16310,13 +16316,13 @@ static uint8_t HuffmanGroupP__HuffmanGroup__getGroupBinaryLength(Group *g)
   return 0;
 }
 
-# 40 "HuffmanTreeP.nc"
+# 68 "HuffmanTreeP.nc"
 static void HuffmanTreeP__addToCode(HuffmanCode *root, uint8_t value, uint8_t length)
-#line 40
+#line 68
 {
   HuffmanCode *code = root->last;
   uint8_t i;
-#line 42
+#line 70
   uint8_t tmp = 0x80;
 
   for (i = 0; i < 8 - length; i++) {
@@ -16337,6 +16343,25 @@ static void HuffmanTreeP__addToCode(HuffmanCode *root, uint8_t value, uint8_t le
         }
       tmp >>= 1;
     }
+}
+
+#line 9
+static size_t HuffmanTreeP__strlen(uint8_t *s)
+#line 9
+{
+  size_t i = 0;
+
+  if (s[0] == 0) {
+      printf("s = 0 %d\n", s[0]);
+    }
+
+  if (s[0] == '\0') {
+      printf("s = ket thuc\n");
+    }
+  printfflush();
+
+  for (i = 0; s[i] != '\0'; i++) ;
+  return i;
 }
 
 # 130 "/opt/tinyos-main/tos/lib/printf/PrintfP.nc"
@@ -16382,18 +16407,18 @@ static void HuffmanTreeP__addToCode(HuffmanCode *root, uint8_t value, uint8_t le
   return SUCCESS;
 }
 
-# 92 "HuffmanTreeP.nc"
+# 121 "HuffmanTreeP.nc"
 static void HuffmanTreeP__shiftLeft(uint8_t *code, uint8_t length)
-#line 92
+#line 121
 {
 
   uint8_t buf = 0xFF;
-#line 94
+#line 123
   uint8_t i;
-#line 94
+#line 123
   uint8_t tmp;
-#line 94
-  uint8_t codeLength = strlen(code);
+#line 123
+  uint8_t codeLength = HuffmanTreeP__strlen(code);
 
   buf <<= 8 - length;
   code[0] <<= length;
@@ -16437,13 +16462,13 @@ static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__fireTimers(u
   /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC__0__updateFromTimer__postTask();
 }
 
-# 9 "HuffmanTreeP.nc"
+# 37 "HuffmanTreeP.nc"
 static TreeNode *HuffmanTreeP__HuffmanTree__createEmptyTree(void )
-#line 9
+#line 37
 {
   TreeNode *root = HuffmanTreeP__HuffmanNode__createNYT_TreeNode();
 
-#line 11
+#line 39
   root->huffmanCode = 0;
   root->codeLength = 0;
 

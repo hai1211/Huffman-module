@@ -6,6 +6,34 @@ module HuffmanTreeP {
   }
 }
 implementation {
+  size_t strlen(uint8_t *s) {
+    size_t i = 0;
+
+    if(s[0] == 0){
+      printf("s = 0 %d\n", s[0]);
+    }
+
+    if(s[0] == '\0'){
+      printf("s = ket thuc\n");
+    }
+    printfflush();
+
+    for (i = 0; s[i] != '\0'; i++) ;
+    return i;
+  }
+
+  void toBinary(uint8_t *a)
+  {
+    uint8_t i, j;
+
+    for(i = 0; i < 4; i++){
+      for(j=0x80;j!=0;j>>=1)
+        printf("%c",(a[i]&j)?'1':'0');
+    }
+
+    printf("\n");
+    printfflush();
+  }
   command TreeNode * HuffmanTree.createEmptyTree(){
     TreeNode * root = call HuffmanNode.createNYT_TreeNode();
     root->huffmanCode = 0;
@@ -69,6 +97,7 @@ implementation {
     last->value <<= 8 - last->size;
 
     while(tmp != NULL){
+      //printf("Huffmancode: %d\n", tmp->value);
       count++;
       tmp = tmp->next;
     }
@@ -83,7 +112,7 @@ implementation {
     }
 
     code[count] = '\0';
-
+    //printf("strlen: %d\n", strlen(code));
     //freeCode(root);
 
     return code;
@@ -175,10 +204,10 @@ implementation {
 
       index = call HuffmanGroup.getIndexByData(g, diff);
 
-      if (diff < 0) {
+      if (diff <= 0) {
         *suffixCode = g->size - index - 1;
       }
-      if (diff >= 0) {
+      if (diff > 0) {
         *suffixCode = g->size + index;
       }
 
@@ -242,7 +271,9 @@ implementation {
     uint8_t data, tmp = code[0];
 
     tmp >>= 8 - length;
+    printf("tmp: %2x\n", tmp);
     data = call HuffmanGroup.getDataByIndex(tmp, group);
+    printf("data: %d\n", data);
 
     return data;
   }
@@ -283,23 +314,34 @@ implementation {
     uint8_t count = 0, codeLength = strlen(code) * 8;
     uint8_t sufCodeLength = 0;
 
+    codeLength = (codeLength == 0)? 8 : codeLength;
+    printf("decoding code: ");
+    toBinary(code);
+    printf("code length %d\n", codeLength);
+
     while (count < codeLength){
       currentNode = root;
+      printf("root->flag %d\n", currentNode->flag);
 
       if(currentNode->flag == NYT_NODE){
+        printf("NYT NODE: data: %d\n", code[0]);
         dataArray[data_count++] = code[0];
         addNode(root, code[0]);
+        printf("decode node group: %d\n", root->r_child->group->number);
         count += 8;
         shiftLeft(code, 8);
       } else if (currentNode->flag == COMP_NODE){
-        // Duyet tung ki tu 0
+        printf("code[0]: %2x\n &0x80: %d\n", code[0], code[0] & 0x80);
+        if (code[0] == 0 && codeLength - count < 8) break;
         while((code[0] & 0x80) == 0 && currentNode->flag != NYT_NODE){
+          printf("duyet ki tu 0\n");
           currentNode = currentNode->l_child;
           count++;
           shiftLeft(code, 1);
         }
 
         if (currentNode->flag == NYT_NODE){
+          printf("NYT Node, value: %d\n", code[0]);
           dataArray[data_count++] = code[0];
 
           addNode(root, code[0]);

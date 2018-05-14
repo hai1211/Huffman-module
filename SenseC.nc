@@ -19,17 +19,15 @@ module SenseC
 implementation
 {
   uint16_t prev_data = 0;
-  int16_t sub = 0;
-  uint32_t tmp;
-  int8_t tempArray[1];
-  
+
   TreeNode *root = NULL;
   TreeNode *root2 = NULL;
 
   size_t strlen1(const char *s) {
-    size_t i;
+    size_t i = 0;
     printf("%s\n", s);
     for (i = 0; s[i] != '\0'; i++) ;
+    if(i == 0) return 1;
     return i;
   }
 
@@ -37,7 +35,7 @@ implementation
   {
     uint8_t i, j;
 
-    for(i = 0; i < 4; i++){
+    for(i = 0; i < strlen(a); i++){
       for(j=0x80;j!=0;j>>=1)
         printf("%c",(a[i]&j)?'1':'0');
     }
@@ -48,40 +46,21 @@ implementation
 
   event void Boot.booted() {
     call Leds.led2On();
-    printf("dsadas\n");
     call Timer.startPeriodic(SAMPLING_FREQUENCY);
   }
 
   event void Timer.fired()
   {
-    // int8_t data[5] = {1, 3, 2, 5, 4};
-    // uint8_t i;
-    // uint8_t *code;
-    // int8_t *dataArray;
-
     if (root == NULL){
       root = call HuffmanTree.createEmptyTree();
+    } else {
+      printf("root | group: %d weight: %d\n", root->r_child->group->number, root->r_child->weight);
     }
     if (root2 == NULL){
       root2 = call HuffmanTree.createEmptyTree();
+    } else {
+      printf("root2 | group: %d weight: %d\n", root2->r_child->group->number, root2->r_child->weight);
     }
-
-    //code = call HuffmanTree.encode(data, 5, root);
-
-    // printf("code %ld\n ", strlen(code));
-    // toBinary(code);
-
-    // dataArray = call HuffmanTree.decode(code, root2);
-
-
-    // for(i = 0; i < 5; i++){
-    //   printf("%d ", dataArray[i]);
-    // }
-    // printf("\n");
-    // printfflush();
-
-    // free(code);
-    // free(dataArray);
 
     call Read.read();
   }
@@ -90,31 +69,34 @@ implementation
   {
     uint8_t *code, i;
     int8_t *dataArray;
-    sub = data - prev_data;
-    if(sub < 0){
-      tmp = -sub / 10;
-    } else {
-      tmp = sub / 10;
-    }
+    int16_t sub = 0;
+    int32_t tmp;
+    int8_t tempArray[1];
 
-    if(tmp < 1){
-      printf("nho hon ");
+    if (prev_data == 0){
+      sub = 0;
+      tmp = 0;
+      prev_data = data;
     } else {
-      printf("lon hon ");
+      sub = data - prev_data;
+      if(sub < 0){
+        tmp = -sub / 10;
+      } else {
+        tmp = sub / 10;
+      }
     }
-    //sub = (int32_t)((data - prev_data) * 0.01);
 
     printf("sub: "); printfFloat(0.01*sub);
     printf("data: "); printfFloat(-39.6 + 0.01*data);
     printf("prev: "); printfFloat(-39.6 + 0.01*prev_data);
-    printf("tmp: %ld\n", tmp);
+    printf("tmp: %d\n", (int8_t)tmp);
 
-    tempArray[0] = tmp;
+    tempArray[0] = (int8_t)tmp;
 
     code = call HuffmanTree.encode(tempArray, 1, root);
 
-    printf("code %ld\n ", strlen(code));
-    toBinary(code);
+    // printf("code %ld\n ", strlen(code));
+    // toBinary(code);
 
     dataArray = call HuffmanTree.decode(code, root2);
 
@@ -122,13 +104,9 @@ implementation
     for(i = 0; i < 1; i++){
       printf("%d ", dataArray[0]);
     }
-    printf("\n");
-    printfflush();
-
+    printf("\n\n");
     free(code);
     free(dataArray);
-
-
 
     printfflush();
 
