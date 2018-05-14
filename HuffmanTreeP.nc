@@ -9,16 +9,13 @@ implementation {
   size_t strlen(uint8_t *s) {
     size_t i = 0;
 
-    if(s[0] == 0){
-      printf("s = 0 %d\n", s[0]);
+    while(1){
+      if(s[i] == '\0' && s[i+1] == '\0' && s[i+2] == '\0'){
+        break;
+      }
+      i++;
     }
 
-    if(s[0] == '\0'){
-      printf("s = ket thuc\n");
-    }
-    printfflush();
-
-    for (i = 0; s[i] != '\0'; i++) ;
     return i;
   }
 
@@ -102,7 +99,7 @@ implementation {
       tmp = tmp->next;
     }
 
-    code = malloc(count + 1);
+    code = malloc(count + 3);
     tmp = root;
     count = 0;
     while(tmp != NULL){
@@ -112,6 +109,8 @@ implementation {
     }
 
     code[count] = '\0';
+    code[count+1] = '\0';
+    code[count+2] = '\0';
     //printf("strlen: %d\n", strlen(code));
     //freeCode(root);
 
@@ -274,6 +273,7 @@ implementation {
     printf("tmp: %2x\n", tmp);
     data = call HuffmanGroup.getDataByIndex(tmp, group);
     printf("data: %d\n", data);
+    printfflush();
 
     return data;
   }
@@ -315,33 +315,24 @@ implementation {
     uint8_t sufCodeLength = 0;
 
     codeLength = (codeLength == 0)? 8 : codeLength;
-    printf("decoding code: ");
-    toBinary(code);
-    printf("code length %d\n", codeLength);
 
     while (count < codeLength){
       currentNode = root;
-      printf("root->flag %d\n", currentNode->flag);
 
       if(currentNode->flag == NYT_NODE){
-        printf("NYT NODE: data: %d\n", code[0]);
         dataArray[data_count++] = code[0];
         addNode(root, code[0]);
-        printf("decode node group: %d\n", root->r_child->group->number);
         count += 8;
         shiftLeft(code, 8);
       } else if (currentNode->flag == COMP_NODE){
-        printf("code[0]: %2x\n &0x80: %d\n", code[0], code[0] & 0x80);
         if (code[0] == 0 && codeLength - count < 8) break;
         while((code[0] & 0x80) == 0 && currentNode->flag != NYT_NODE){
-          printf("duyet ki tu 0\n");
           currentNode = currentNode->l_child;
           count++;
           shiftLeft(code, 1);
         }
 
         if (currentNode->flag == NYT_NODE){
-          printf("NYT Node, value: %d\n", code[0]);
           dataArray[data_count++] = code[0];
 
           addNode(root, code[0]);
