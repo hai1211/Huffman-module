@@ -204,7 +204,7 @@ implementation {
       index = call HuffmanGroup.getIndexByData(g, diff);
 
       if (diff <= 0) {
-        *suffixCode = g->size - index - 1;
+        *suffixCode = index;
       }
       if (diff > 0) {
         *suffixCode = g->size + index;
@@ -300,6 +300,10 @@ implementation {
           temp->weight += 1;
           reBalance(root);
       }
+
+      printf("preCode: %02x, length: %d\n", preCode, preCodeLength);
+      printf("sufCode: %02x, length: %d\n", sufCode, sufCodeLength);
+      printfflush();
 
       addToCode(code, preCode, preCodeLength);
       addToCode(code, sufCode, sufCodeLength);

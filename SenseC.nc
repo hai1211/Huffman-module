@@ -35,7 +35,7 @@ implementation
   {
     uint8_t i, j;
 
-    for(i = 0; i < strlen(a); i++){
+    for(i = 0; i < 4; i++){
       for(j=0x80;j!=0;j>>=1)
         printf("%c",(a[i]&j)?'1':'0');
     }
@@ -79,11 +79,7 @@ implementation
       prev_data = data;
     } else {
       sub = data - prev_data;
-      if(sub < 0){
-        tmp = -sub / 10;
-      } else {
-        tmp = sub / 10;
-      }
+      tmp = sub / 10;
     }
 
     printf("sub: "); printfFloat(0.01*sub);
@@ -95,8 +91,8 @@ implementation
 
     code = call HuffmanTree.encode(tempArray, 1, root);
 
-    // printf("code %ld\n ", strlen(code));
-    // toBinary(code);
+    printf("code length: %ld\n ", strlen(code));
+    toBinary(code);
 
     dataArray = call HuffmanTree.decode(code, root2);
 

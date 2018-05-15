@@ -21,12 +21,12 @@ typedef struct group {
 
 typedef struct TreeNode {
   Group * group;
-  uint8_t weight;
+  uint16_t weight;
   uint8_t flag;
   uint8_t codeLength;
   struct TreeNode *l_child;
   struct TreeNode *r_child;
-  uint8_t huffmanCode;
+  uint16_t huffmanCode;
 } TreeNode;
 
 typedef struct HuffmanCode {

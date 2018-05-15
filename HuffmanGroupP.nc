@@ -82,11 +82,11 @@ implementation {
   }
 
   command uint8_t HuffmanGroup.getGroupBinaryLength(Group * g){
-    uint8_t i, length = 0, size = g->size;
+    uint8_t i, length = 1, size = g->size;
 
     for (i = 0; i < 8; i++){
       if(size & 0x01){
-        return ++length*2;
+        return ++length;
       }
       size >>= 1;
       length++;
